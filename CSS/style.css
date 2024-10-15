@@ -1,6 +1,4 @@
-
-
-*{
+* {
     padding: 0%;
 }
 
@@ -14,11 +12,3 @@ header{
     width: 100%;
     
 }
-<style>
-    .paragraf-standard{
-        font-family: 'Courier New', Courier, monospace;
-        color: red;
-}
-
-
-</style>
