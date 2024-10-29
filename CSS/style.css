@@ -8,8 +8,14 @@ nav{
 }
 
 .main-grid{
-
+    display: grid;
+    grid-template-columns: auto;
 }
 .column{
-    
+    font-family: 2em;
+}
+
+.colum-subtitle{
+    font-family: 2em;
+
 }
