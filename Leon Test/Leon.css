@@ -3,14 +3,33 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+
+.logo{
+  SYLE LOGO HER!
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  padding: 12px 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+li a:hover {
+  background-color: #646464;
+}
+
+.active {
+  background-color: #ffc0ffCB;
 }
