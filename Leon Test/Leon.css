@@ -10,17 +10,13 @@ ul {
 }
 
 
-.logo{
-  SYLE LOGO HER!
-}
-
-li {''
+li {
   float: right;
 }
 
 li a {
   display: block;
-  padding: 12px 14px;
+  padding: 14px 14px;
   text-align: center;
   text-decoration: none;
   color: #dddddd;
