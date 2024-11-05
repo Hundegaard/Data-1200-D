@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nav{
     
     height: 80px;
@@ -39,3 +40,39 @@ nav{
     list-style: none;
     font-size: 1 em;
 }
+=======
+* {
+    padding: 0;
+  margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+  }
+  
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #dddddd;
+  }
+  
+  li a:hover {
+    background-color: #646464;
+  }
+  
+  .active {
+    background-color: #ffc0ffCB;
+  }
+>>>>>>> 48271120fb8d1aefba1f34d00369c09a7b61bdba

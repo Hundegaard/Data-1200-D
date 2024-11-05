@@ -1,7 +1,10 @@
+* {
+  padding: 0;
+margin: 0;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -10,17 +13,13 @@ ul {
 }
 
 
-.logo{
-  SYLE LOGO HER!
-}
-
-li {''
+li {
   float: right;
 }
 
 li a {
   display: block;
-  padding: 12px 14px;
+  padding: 14px 14px;
   text-align: center;
   text-decoration: none;
   color: #dddddd;
