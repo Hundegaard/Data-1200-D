@@ -47,6 +47,10 @@ nav li a {
 
 nav li a:hover {
     background-color: #646464;
+    
+}
+a:hover{
+    color: #ffc0ff;
 }
 
 .logo {
