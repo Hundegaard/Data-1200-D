@@ -79,6 +79,7 @@ nav li a:hover {
 
 .collapsible-contents li label{
     display: flex;
+    color: #dddddd;
     align-items: center;
     padding: 10px;
     font-size: 1.5rem;
