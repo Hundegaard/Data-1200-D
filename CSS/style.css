@@ -1,34 +1,28 @@
-* {
-    padding: 0;
-  margin: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-  }
-  
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    padding: 14px 14px;
-    text-align: center;
-    text-decoration: none;
-    color: #dddddd;
-  }
-  
-  li a:hover {
-    background-color: #646464;
-  }
-  
-  .active {
-    background-color: #ffc0ffCB;
-  }
+nav{
+    
+    height: 80px;
+    background-color: #82bfe8;
+    display: flex;
+
+    align-items: center;
+}
+
+
+.grid-overview{
+    display: grid;
+    grid-template-columns: 
+    
+}
+
+.grid-info{
+    list-style: none;
+    font-size: 1 em;
+    font-weight: bold;
+    gap: 10%;
+
+}
+
+.grid-sub-info{
+    list-style: none;
+    font-size: 1 em;
+}
