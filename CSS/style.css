@@ -114,3 +114,11 @@ input[type = "radio"]{
 .collapsible-contents input[type = "radio"]:checked + label::before{
     content: '-';
 }
+/* everything under 650 px scaling */
+@media screen and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
