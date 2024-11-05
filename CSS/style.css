@@ -8,11 +8,23 @@ nav{
     align-items: center;
 }
 
+.main-grid{
+    display: grid;
+    grid-template-rows: 100px, 100px ;
+    grid-template-columns: 100px;
+}
+.column{
+    font-family: 2em;
+}
+
+.colum-subtitle{
+    font-family: 2em;
+
+}
 
 .grid-overview{
     display: grid;
     grid-template-columns: 
-    backround-color: white;
     
 }
 
@@ -63,4 +75,3 @@ nav{
   .active {
     background-color: #ffc0ffCB;
   }
->>>>>>> 48271120fb8d1aefba1f34d00369c09a7b61bdba
