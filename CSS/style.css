@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -47,6 +48,6 @@ nav li a:hover {
     background-color: #646464;
 }
 
-.active {
+.logo {
     background-color: #ffc0ffCB;
   }
