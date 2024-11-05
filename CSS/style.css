@@ -15,7 +15,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     width: 80vw;
-    
+
 }
 
 .grid-container section {
@@ -36,7 +36,7 @@ nav ul {
 nav li {
     list-style-type: none;
 }
-  
+
 nav li a {
     display: block;
     padding: 14px 14px;
@@ -44,7 +44,7 @@ nav li a {
     text-decoration: none;
     color: #dddddd;
 }
-  
+
 nav li a:hover {
     background-color: #646464;
 }
@@ -85,6 +85,11 @@ nav li a:hover {
     font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* Styling for dropdown text */
+.droptext{
+    color: #dddddd;
 }
 
 label::before{
