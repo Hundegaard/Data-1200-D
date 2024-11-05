@@ -1,4 +1,4 @@
-/* Nav */
+/* Nav :) */
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     width: 80vw;
-    
+
 }
 
 .grid-container section {
@@ -36,7 +36,7 @@ nav ul {
 nav li {
     list-style-type: none;
 }
-  
+
 nav li a {
     display: block;
     padding: 14px 14px;
@@ -44,7 +44,7 @@ nav li a {
     text-decoration: none;
     color: #dddddd;
 }
-  
+
 nav li a:hover {
     background-color: #646464;
 }
@@ -53,7 +53,7 @@ nav li a:hover {
     background-color: #ffc0ffCB;
   }
 
-/* Video styling */
+/* Video styling :) */
   .video{
     width: 100%;
     height: 550px;
@@ -72,18 +72,24 @@ nav li a:hover {
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
-    background: #e3edf7;
+    background: #333;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .collapsible-contents li label{
     display: flex;
+    color: #dddddd;
     align-items: center;
     padding: 10px;
     font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* Styling for dropdown text */
+.droptext{
+    color: #dddddd;
 }
 
 label::before{
