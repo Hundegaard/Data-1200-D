@@ -20,3 +20,22 @@ nav{
     font-family: 2em;
 
 }
+
+.grid-overview{
+    display: grid;
+    grid-template-columns: 
+    
+}
+
+.grid-info{
+    list-style: none;
+    font-size: 1 em;
+    font-weight: bold;
+    gap: 10%;
+
+}
+
+.grid-sub-info{
+    list-style: none;
+    font-size: 1 em;
+}
