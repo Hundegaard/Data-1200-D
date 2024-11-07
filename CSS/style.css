@@ -1,22 +1,134 @@
-nav{
-    
-    height: 80px;
-    background-color: #82bfe8;
-    display: flex;
+/* Nav :) */
+body {
+    margin: 0;
+    padding: 0;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-.main-grid{
+/* grid-container */
+.grid-container {
     display: grid;
-    grid-template-rows: 100px, 100px ;
-    grid-template-columns: 100px;
-}
-.column{
-    font-family: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    width: 80vw;
+
 }
 
-.colum-subtitle{
-    font-family: 2em;
+.grid-container section {
+    border-top: 1px solid black;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+nav li a:hover {
+    background-color: #646464;
+    
+}
+a:hover{
+    color: #ffc0ff;
+}
+
+.logo {
+    background-color: #ffc0ffCB;
+  }
+
+/* Video styling :) */
+  .video{
+    width: 100%;
+    height: 550px;
+  }
+
+/*DROPDOWN LISTS*/
+
+  .collapsible-contents{
+    margin: 60px auto;
+    width: 600px;
+}
+
+.collapsible-contents li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #333;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.collapsible-contents li label{
+    display: flex;
+    color: #dddddd;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Styling for dropdown text */
+.droptext{
+    color: #dddddd;
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+input[type = "radio"]{
+    display: none;
+}
+
+.collapsible-contents .contents{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.collapsible-contents input[type = "radio"]:checked + label + .contents{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.collapsible-contents input[type = "radio"]:checked + label::before{
+    content: '-';
+}
+/* everything under 650 px scaling */
+@media screen and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 }
