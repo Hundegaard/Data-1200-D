@@ -13,7 +13,7 @@
     background:#646464;
     width:100%;
     position:absolute;
-    bottom:100px;
+    bottom:0;
     color:#fff;
     padding: 100px 0 50px;
     border-top-left-radius:50px;
@@ -49,4 +49,28 @@
   .social-info:hover{
     cursor:pointer;
     text-decoration:underline;
+    color: #ffc0ff;
   }
+
+  .fa {
+    padding: 13px;
+    font-size: 10px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:20px;
+    margin-right:10px; 
+  }
+
+
+  /* Facebook */
+.fa-facebook{
+  background: #ffc0ff;;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter{
+  background: #ffc0ff;
+  color:white;
+}
