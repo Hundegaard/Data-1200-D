@@ -9,6 +9,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 /* grid-container */
 .grid-container {
     display: grid;
@@ -43,35 +44,35 @@ nav li a {
     text-align: center;
     text-decoration: none;
     color: #dddddd;
-    
+
 }
 
-.active{
+.active {
     color: #ffc0ff;
 }
 
-a:hover{
+a:hover {
     color: #ffc0ff;
 }
 
 .logo {
     background-color: #ffc0ffCB;
-  }
+}
 
 /* Video styling :) */
-  .video{
+.video {
     width: 100%;
     height: 550px;
-  }
+}
 
 /*DROPDOWN LISTS*/
 
-  .collapsible-contents{
+.collapsible-contents {
     margin: 60px auto;
     width: 600px;
 }
 
-.collapsible-contents li{
+.collapsible-contents li {
     list-style: none;
     width: 100%;
     margin: 20px;
@@ -79,10 +80,10 @@ a:hover{
     border-radius: 8px;
     background: #333;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-.collapsible-contents li label{
+.collapsible-contents li label {
     display: flex;
     color: #dddddd;
     align-items: center;
@@ -93,22 +94,22 @@ a:hover{
 }
 
 /* Styling for dropdown text */
-.droptext{
+.droptext {
     color: #dddddd;
 }
 
-label::before{
+label::before {
     content: '+';
     margin-right: 10px;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-input[type = "radio"]{
+input[type="radio"] {
     display: none;
 }
 
-.collapsible-contents .contents{
+.collapsible-contents .contents {
     color: #555;
     padding: 0 10px;
     line-height: 26px;
@@ -117,14 +118,15 @@ input[type = "radio"]{
     transition: max-height 0.5s, padding 0.5s;
 }
 
-.collapsible-contents input[type = "radio"]:checked + label + .contents{
+.collapsible-contents input[type="radio"]:checked+label+.contents {
     max-height: 400px;
     padding: 10px 10px 20px;
 }
 
-.collapsible-contents input[type = "radio"]:checked + label::before{
+.collapsible-contents input[type="radio"]:checked+label::before {
     content: '-';
 }
+
 /* everything under 650 px scaling */
 @media screen and (max-width: 650px) {
     .grid-container {
@@ -135,8 +137,6 @@ input[type = "radio"]{
 
 /* Activity page */
 
-
-
 .activityImage {
     display: flex;
     width: 75%;
@@ -144,3 +144,6 @@ input[type = "radio"]{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+   
