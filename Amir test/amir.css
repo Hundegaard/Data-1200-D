@@ -43,6 +43,7 @@
   .footer-info:hover{
     cursor:pointer;
     text-decoration:underline;
+    color: #ffc0ff;
   }
 
   .social-info:hover{
