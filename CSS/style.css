@@ -43,8 +43,12 @@ nav li a {
     text-align: center;
     text-decoration: none;
     color: #dddddd;
+    
 }
 
+.active{
+    color: #ffc0ff;
+}
 
 a:hover{
     color: #ffc0ff;
@@ -127,4 +131,8 @@ input[type = "radio"]{
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
+
+.readingText{
+    font-family: 'Courier New', Courier, monospace;
 }
