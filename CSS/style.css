@@ -135,14 +135,12 @@ input[type = "radio"]{
 
 /* Activity page */
 
-.activityBody{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 
 .activityImage {
     display: flex;
     width: 75%;
     height: 700;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
