@@ -43,8 +43,12 @@ nav li a {
     text-align: center;
     text-decoration: none;
     color: #dddddd;
+    
 }
 
+.active{
+    color: #ffc0ff;
+}
 
 a:hover{
     color: #ffc0ff;
@@ -128,46 +132,17 @@ input[type = "radio"]{
     }
 
 }
-/* footer style and layout for main page*/
-footer{
-    background:#646464;
-    width:100%;
-    position:relative;
-    bottom:0;
-    color:#fff;
-    padding: 100px 0 50px;
-    border-top-left-radius:50px;
-    font-size:1em;
-    line-height:25px;
-  }
 
-  .row{
-    width:85%;
-    margin:auto;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:flex-start;
-    justify-content:space-between;
-  }
+/* Activity page */
 
-  .col{
-    flex-basis:25%;
-    padding:10px;
-    size:1em;
-  }
+.activityBody{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
-  .footer-info{
-    font-weight: bold;
-  }
-
-  .footer-info:hover{
-    cursor:pointer;
-    text-decoration:underline;
-    color: #ffc0ff;
-  }
-
-  .social-info:hover{
-    cursor:pointer;
-    text-decoration:underline;
-    color: #ffc0ff;
-  }
+.activityImage {
+    display: flex;
+    width: 75%;
+    height: 700;
+    
+}
