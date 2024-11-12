@@ -145,11 +145,10 @@ input[type="radio"] {
     margin-right: auto;
 }
 
-.readText{
+.readText {
     text-align: center;
 }
 
-
-
-
-   
+.readTextHead {
+    text-align: center;
+}
