@@ -16,7 +16,6 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     width: 80vw;
-
 }
 
 .grid-container section {
@@ -47,13 +46,13 @@ nav li a {
 
 }
 
-.active {
+.active, a:hover {
     color: #ffc0ff;
 }
 
-a:hover {
+/* a:hover {
     color: #ffc0ff;
-}
+} */
 
 .logo {
     background-color: #ffc0ffCB;
@@ -85,7 +84,6 @@ a:hover {
 
 .collapsible-contents li label {
     display: flex;
-    color: #dddddd;
     align-items: center;
     padding: 10px;
     font-size: 1.5rem;
@@ -94,7 +92,7 @@ a:hover {
 }
 
 /* Styling for dropdown text */
-.droptext {
+.collapsible-contents li label, .droptext {
     color: #dddddd;
 }
 
@@ -190,7 +188,6 @@ input[type="radio"] {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 /* Activity page */
@@ -203,11 +200,11 @@ input[type="radio"] {
     margin-right: auto;
 }
 
-.readText {
+.readText, .readTextHead {
     text-align: center;
 }
 
-.readTextHead {
+/* .readTextHead {
     text-align: center;
-}
+} */
 
