@@ -208,3 +208,83 @@ input[type="radio"] {
     text-align: center;
 } */
 
+footer{
+    background:#646464;
+    width:100%;
+    position:relative;
+    bottom:0;
+    color:#fff;
+    padding: 100px 0 50px;
+    border-top-left-radius:50px;
+    font-size:1em;
+    line-height:25px;
+  }
+
+  .row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content:space-between;
+  }
+
+  .col{
+    flex-basis:25%;
+    padding:10px;
+    size:1em;
+  }
+
+  .footer-info{
+    font-weight: bold;
+  }
+
+  .footer-info:hover{
+    cursor:pointer;
+    text-decoration:underline;
+    color: #ffc0ff;
+  }
+
+  .social-info:hover{
+    cursor:pointer;
+    text-decoration:underline;
+    color: #ffc0ff;
+  }
+
+  .fa {
+    padding: 13px;
+    font-size: 0;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:20px;
+    margin-right:10px; 
+  }
+
+
+  /* Facebook */
+.fa-facebook{
+  background: #ffc0ff;;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter{
+  background: #ffc0ff;
+  color:white;
+  margin-top:10px;
+}
+
+/* LinkedIn */
+.fa-linkedin{
+  background: #ffc0ff;
+  color:white;
+  margin-top:10px;
+}
+
+/* Instagram */
+.fa-instagram{
+  background: #ffc0ff;
+  color:white;
+  margin-top:10px;
+}
