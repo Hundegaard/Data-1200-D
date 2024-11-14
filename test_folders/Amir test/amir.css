@@ -5,9 +5,6 @@
     box-sizing:border-box;
   }
 
-  body{
-    
-  }
 
   footer{
     background:#646464;
@@ -54,7 +51,7 @@
 
   .fa {
     padding: 13px;
-    font-size: 10px;
+    font-size: large;;
     width: 40px;
     text-align: center;
     text-decoration: none;
@@ -73,4 +70,20 @@
 .fa-twitter{
   background: #ffc0ff;
   color:white;
+  margin-top:10px;
 }
+
+/* LinkedIn */
+.fa-linkedin{
+  background: #ffc0ff;
+  color:white;
+  margin-top:10px;
+}
+
+/* Instagram */
+.fa-instagram{
+  background: #ffc0ff;
+  color:white;
+  margin-top:10px;
+}
+
