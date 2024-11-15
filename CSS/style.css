@@ -205,34 +205,31 @@ aside {
     margin-right: auto;
 }
 
-.activity-bilde{
-    width: 50;
-    height: 50;
-}
-
-.row {
+/*image grid on activity page*/
+.grid-container-activity {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 5%;
+    text-align: center;
   }
-  
+
 .column {
     float: left;
     padding: 5px;
-    object-fit: cover;
   }
   
   .column img {
-    margin-top: 12px;
-    width: %;
-    height: 50%;
+    margin-top: 5px;
+    width: 30%;
+    height: 30%;
   }
 
-  .row:after {
+  .grid-container-activity:after {
   content: "";
   display: table;
   clear: both;
 }
+
 
 .readText, .readTextHead {
     text-align: center;
