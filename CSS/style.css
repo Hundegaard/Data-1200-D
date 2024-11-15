@@ -50,10 +50,6 @@ nav li a {
     color: #ffc0ff;
 }
 
-/* a:hover {
-    color: #ffc0ff;
-} */
-
 .logo {
     background-color: #ffc0ffCB;
 }
@@ -204,10 +200,6 @@ input[type="radio"] {
     text-align: center;
 }
 
-/* .readTextHead {
-    text-align: center;
-} */
-
 footer{
     background:#646464;
     width:100%;
@@ -239,13 +231,7 @@ footer{
     font-weight: bold;
   }
 
-  .footer-info:hover{
-    cursor:pointer;
-    text-decoration:underline;
-    color: #ffc0ff;
-  }
-
-  .social-info:hover{
+  .footer-info:hover, .social-info:hover{
     cursor:pointer;
     text-decoration:underline;
     color: #ffc0ff;
@@ -263,28 +249,12 @@ footer{
 
 
   /* Facebook */
-.fa-facebook{
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
   background: #ffc0ff;;
   color: white;
 }
 
 /* Twitter */
-.fa-twitter{
-  background: #ffc0ff;
-  color:white;
-  margin-top:10px;
-}
-
-/* LinkedIn */
-.fa-linkedin{
-  background: #ffc0ff;
-  color:white;
-  margin-top:10px;
-}
-
-/* Instagram */
-.fa-instagram{
-  background: #ffc0ff;
-  color:white;
+.fa-twitter, .fa-linkedin, .fa-instagram{
   margin-top:10px;
 }
