@@ -186,6 +186,15 @@ input[type="radio"] {
     content: '-';
 } */
 
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
 /* Activity page */
 
 .activityImage {
@@ -247,7 +256,6 @@ footer{
     border-radius:20px;
     margin-right:10px; 
   }
-
 
   /* Facebook */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
