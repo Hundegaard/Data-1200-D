@@ -401,14 +401,13 @@ footer{
     margin-right: auto;
 }
 
-h3 .readText{
-    margin-top: 500px;
+h3.readText{
+    margin-top: 50px;
 }
 /*image grid on activity page*/
 .grid-container-activity {
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
     text-align: center;
   }
 
