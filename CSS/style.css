@@ -1,4 +1,4 @@
-/* -------------------Nav------------------- :) */
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-
+/* -------------------Nav------------------- :) */
 nav {
     overflow: hidden;
     background-color: #333;
