@@ -20,13 +20,18 @@ h1{
 
 h2 {
     font-size: 1.30rem;
-    font-weight: lighter; 
 }
 
 h3{
     font-size: 1.20rem;
 }
 
+h4{
+    font-size: 1.15rem;
+}
+h2,h4{
+    font-weight: lighter; 
+}
 
 
 /* -------------------Nav------------------- :) */
@@ -396,6 +401,9 @@ footer{
     margin-right: auto;
 }
 
+h3 .readText{
+    margin-top: 500px;
+}
 /*image grid on activity page*/
 .grid-container-activity {
     display: flex;
@@ -410,7 +418,7 @@ footer{
   }
   
   .column img {
-    margin-top: 5px;
+    margin-top: px;
     width: 30%;
     height: 30%;
   }
