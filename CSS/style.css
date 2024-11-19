@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -9,12 +8,17 @@ main {
     flex-direction: column;
     align-items: center;
 }
+<<<<<<< Updated upstream
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     
 }
+=======
+
+
+>>>>>>> Stashed changes
 /* -------------------Nav------------------- :) */
 nav {
     overflow: hidden;
@@ -62,6 +66,7 @@ nav li a {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     width: 80vw;
+    border-bottom: 1px solid lightgrey;
 }
 
 .grid-container section {
@@ -303,6 +308,10 @@ input[type="radio"] {
     font-style: italic;
     background-color: lightgray;
   }
+
+.aside-information h3{
+    border-bottom: 1px solid black;
+}
 
 
 /* -------------------FOOTER------------------- */
