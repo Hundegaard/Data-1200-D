@@ -8,17 +8,16 @@ main {
     flex-direction: column;
     align-items: center;
 }
-<<<<<<< Updated upstream
-*{
+
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h2 {
     
 }
-=======
 
 
->>>>>>> Stashed changes
 /* -------------------Nav------------------- :) */
 nav {
     overflow: hidden;
