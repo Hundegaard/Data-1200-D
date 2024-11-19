@@ -8,13 +8,36 @@ main {
     flex-direction: column;
     align-items: center;
 }
+<<<<<<< Updated upstream
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+=======
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+>>>>>>> Stashed changes
 h2 {
-    
+    font-size: 1.30rem;
+}
+
+h3{
+    font-size: 1.20rem;
+}
+
+h4{
+    font-size: 1.15rem;
+}
+h2,h4{
+    font-weight: lighter; 
 }
 
 
