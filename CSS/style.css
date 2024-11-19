@@ -103,7 +103,7 @@ nav li a {
     border: 8px solid black;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    
     margin: 60px auto;
     width: 600px;
 }
@@ -115,8 +115,6 @@ nav li a {
     padding: 10px;
     border-radius: 8px;
     background: #333;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .collapsible-contents-list label {
@@ -308,7 +306,7 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
-  
+
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
     padding: 13px;
