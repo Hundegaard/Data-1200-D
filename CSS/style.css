@@ -99,22 +99,30 @@ nav li a {
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 .collapsible-contents {
-    min-height: 500px;
-    border: 8px solid black;
+    border: 8px solid white;
     display: flex;
     flex-direction: column;
-    
     margin: 60px auto;
     width: 600px;
+    box-sizing: border-box;
+}
+
+.droptext{
+    color:white;
+    line-height:25px;
+
 }
 
 .collapsible-contents-list {
     list-style: none;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0;
     padding: 10px;
     border-radius: 8px;
     background: #333;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .collapsible-contents-list label {
@@ -124,14 +132,9 @@ nav li a {
     font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
-}
-
-/* Styling for dropdown text */
-.collapsible-contents-list label, .droptext {
     color: #dddddd;
 }
 
-/* Dropdown apperance when closed */
 label::before {
     content: '+';
     margin-right: 10px;
@@ -139,117 +142,92 @@ label::before {
     font-weight: 600;
 }
 
-/* Hides the checkbox */
 input[type="checkbox"] {
     display: none;
 }
 
 .collapsible-contents .contents {
-    color: #555;
     padding: 0 10px;
-    line-height: 26px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    box-sizing: border-box;
 }
 
-.collapsible-contents input[type="checkbox"]:checked+label+.contents {
-    max-height: 400px;
+.collapsible-contents input[type="checkbox"]:checked + label + .contents {
+    max-height: none;
     padding: 10px 10px 20px;
 }
 
-.collapsible-contents input[type="checkbox"]:checked+label::before {
+.collapsible-contents input[type="checkbox"]:checked + label::before {
     content: '-';
 }
-/* -------------------DROPDOWN LISTS STUDIETSOPPBYGGNING TEST------------------- */
-.subject-info1,.subject-info2{
-    color:white;
-    display:inline;
+
+.subject-info1, .subject-info2 {
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.subject-info2{
+
+.subject-info2 {
     margin-left: 30px;
 }
-.collapsible-contents .contents {
-    color: #555;
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.collapsible-contents input[type="checkbox"]:checked+label+.contents {
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.collapsible-contents input[type="checkbox"]:checked+label::before {
-    content: '-';
+.semester-dropdown{
+    margin-left:20px;
 }
 
 .study-structure {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #333;
-    border: 1px solid #ddd;
+    margin: 20px 0;
+    border: 1px solid #ffc0ffCB;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .study-structure details {
-    margin: 15px 0;
+    margin: 10px 0;
     border: none;
     background: transparent;
 }
 
 .study-structure summary {
     background: #333;
-    color: #ffffff;
+    color: white;
     font-weight: normal;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .study-structure summary:hover {
-    background:#333;
-    color:#ffc0ffCB;
+    color: #ffc0ffCB;
 }
 
 .study-structure details[open] summary {
-    background: #333;
+    background: #444;
 }
 
 .study-structure .subject-list {
     list-style: none;
+    margin: 10px 0 0 20px;
     padding: 0;
-    margin: 0;
 }
 
 .study-structure .subject-list li {
-    background: #e0e0e0;
-    padding: 8px 15px;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    padding: 8px;
+    background: #333;
+    color: white;
     border-radius: 5px;
     transition: background-color 0.2s;
 }
 
 .study-structure .subject-list li:hover {
-    background: #d0d0d0;
-}
-
-.study-structure details summary {
-    display: block;
-    font-size: 1.2rem;
-}
-
-.study-structure .semester-dropdown {
-    border: 1px solid  #ffc0ffCB;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #ffc0ffCB;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -306,7 +284,6 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
-
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
     padding: 13px;
@@ -318,17 +295,21 @@ footer{
     margin-right:10px; 
   }
 
+  /* Facebook logo */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
   background: #ffc0ff;;
   color: white;
 }
 
+/* Twitter logo */
 .fa-twitter, .fa-linkedin, .fa-instagram{
   margin-top:10px;
 }
 
 
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
+
+
 .topPageImage {
     display: flex;
     width: 75%;
@@ -340,7 +321,6 @@ footer{
 h3.readText{
     margin-top: 50px;
 }
-
 /*image grid on activity page*/
 .grid-container-activity {
     display: flex;
@@ -364,6 +344,7 @@ h3.readText{
   display: table;
   clear: both;
 }
+
 
 .readText, .readTextHead {
     text-align: center;
