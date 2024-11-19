@@ -308,6 +308,7 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
+  
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
     padding: 13px;
@@ -319,21 +320,17 @@ footer{
     margin-right:10px; 
   }
 
-  /* Facebook */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
   background: #ffc0ff;;
   color: white;
 }
 
-/* Twitter */
 .fa-twitter, .fa-linkedin, .fa-instagram{
   margin-top:10px;
 }
 
 
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
-
-
 .topPageImage {
     display: flex;
     width: 75%;
@@ -345,6 +342,7 @@ footer{
 h3.readText{
     margin-top: 50px;
 }
+
 /*image grid on activity page*/
 .grid-container-activity {
     display: flex;
@@ -368,7 +366,6 @@ h3.readText{
   display: table;
   clear: both;
 }
-
 
 .readText, .readTextHead {
     text-align: center;
