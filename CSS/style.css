@@ -152,6 +152,13 @@ input[type="checkbox"] {
     content: '-';
 }
 /* -------------------DROPDOWN LISTS STUDIETSOPPBYGGNING TEST------------------- */
+.subject-info1,.subject-info2{
+    color:white;
+    display:inline;
+}
+.subject-info2{
+    margin-left: 30px;
+}
 .collapsible-contents .contents {
     color: #555;
     padding: 0 10px;
@@ -305,7 +312,7 @@ input[type="radio"] {
   }
 
 
-/* -------------------FOOTER------------------- */
+/* -------------------FOOTER-------------------*/
 footer{
     background:#333;
     width:100%;
@@ -343,7 +350,7 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
-
+/*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
     padding: 13px;
     font-size: 0;
