@@ -76,7 +76,7 @@ nav li a {
 }
 
 
-/* --------------------------------------grid-container-------------------------------------- */
+/* --------------------------------------Grid containers-------------------------------------- */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -100,16 +100,23 @@ nav li a {
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 .collapsible-contents {
     border: 8px solid white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin: 60px auto;
-    width: 600px;
+    width: 700px;
     box-sizing: border-box;
 }
 
-.droptext{
+.droptext, .droptext-spesialisering, .hyperlink-text{
     color:white;
-    line-height:25px;
+    line-height: 20px;
+}
+
+.droptext-spesialisering{
+    padding-left: 45px;
+    padding-right: 30px;
+}
+
+.hyperlink-text {
 
 }
 
@@ -120,8 +127,8 @@ nav li a {
     padding: 10px;
     border-radius: 8px;
     background: #333;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3), 
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 
@@ -163,6 +170,7 @@ input[type="checkbox"] {
     content: '-';
 }
 
+/* Emner */
 .subject-info1, .subject-info2 {
     color: white;
     display: inline-block;
@@ -172,11 +180,11 @@ input[type="checkbox"] {
 .subject-info2 {
     margin-left: 30px;
 }
-.semester-dropdown{
+.semester-dropdown, .spesialisering-dropdown {
     margin-left:20px;
 }
 
-.study-structure {
+.study-structure, .box-structure {
     margin: 20px 0;
     border: 1px solid #ffc0ffCB;
     border-radius: 8px;
@@ -185,13 +193,13 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-.study-structure details {
+.study-structure details, .box-structure details {
     margin: 10px 0;
     border: none;
     background: transparent;
 }
 
-.study-structure summary {
+.study-structure summary, .box-structure summary {
     background: #333;
     color: white;
     font-weight: normal;
@@ -201,11 +209,11 @@ input[type="checkbox"] {
     transition: background-color 0.3s;
 }
 
-.study-structure summary:hover {
+.study-structure summary:hover, .box-structure summary:hover {
     color: #ffc0ffCB;
 }
 
-.study-structure details[open] summary {
+.study-structure details[open] summary, .box-structure details[open] summary {
     background: #444;
 }
 
@@ -284,6 +292,7 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
+
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
     padding: 13px;
@@ -295,7 +304,7 @@ footer{
     margin-right:10px; 
   }
 
-  /* Facebook logo */
+/* Facebook logo */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
   background: #ffc0ff;;
   color: white;
@@ -321,6 +330,7 @@ footer{
 h3.readText{
     margin-top: 50px;
 }
+
 /*image grid on activity page*/
 .grid-container-activity {
     display: flex;
@@ -344,7 +354,6 @@ h3.readText{
   display: table;
   clear: both;
 }
-
 
 .readText, .readTextHead {
     text-align: center;
