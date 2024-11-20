@@ -34,6 +34,11 @@ h2, h4 {
     font-weight: lighter; 
 }
 
+/* a {
+    color: black;
+    border-bottom: 1px solid yellow;
+} */
+
 
 /* --------------------------------------Nav-------------------------------------- :) */
 nav {
@@ -65,6 +70,7 @@ nav li a {
 }
 
 .logo {
+    color: black;
     background-color: #ffc0ffCB;
 }
 
@@ -99,11 +105,8 @@ nav li a {
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 .collapsible-contents {
-    border: 8px solid white;
-    display: grid;
-    margin: 60px auto;
     width: 700px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .droptext, .droptext-spesialisering, .hyperlink-text{
@@ -114,10 +117,6 @@ nav li a {
 .droptext-spesialisering{
     padding-left: 45px;
     padding-right: 30px;
-}
-
-.hyperlink-text {
-
 }
 
 .collapsible-contents-list {
@@ -240,17 +239,25 @@ input[type="checkbox"] {
 
 
 /* -------------------------------------ASIDE-------------------------------------- */
-.aside-information {
-    width: 30%;
+aside {
+    width: 20%;
     padding-left: 15px;
-    margin-left: 15px;
+    padding-right: 15px;
     float: right;
     font-style: italic;
     background-color: lightgray;
   }
 
-.aside-information h3{
+aside section{
     border-bottom: 1px solid black;
+}
+
+/* aside h3 {
+    margin-top: 5px;
+} */
+
+.aside-text {
+    padding-left: 10px;
 }
 
 
@@ -317,8 +324,6 @@ footer{
 
 
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
-
-
 .topPageImage {
     display: flex;
     width: 75%;
