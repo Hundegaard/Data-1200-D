@@ -1,3 +1,8 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,10 +12,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -102,10 +103,20 @@ nav li a {
     }
 }
 
+/* --------------------------------------Main grid containters-------------------------------------- */
+/* .main-content {
+    padding-left: 400px;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 900px;
+    grid-template-columns: 2fr 1fr;
+} */
+
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 .collapsible-contents {
-    width: 700px;
+    width: 80%;
+    /* padding-left: 150px; */
     /* box-sizing: border-box; */
 }
 
@@ -239,14 +250,21 @@ input[type="checkbox"] {
 
 
 /* -------------------------------------ASIDE-------------------------------------- */
+/* .bruh {
+    padding-left: 10px;
+} */
+
 aside {
-    width: 20%;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding: 15px;
     float: right;
     font-style: italic;
     background-color: lightgray;
   }
+
+.aside-top-section {
+    border-top: 1px solid black;
+}
 
 aside section{
     border-bottom: 1px solid black;
