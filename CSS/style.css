@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 1.30rem;
+    font-weight: lighter;
 }
 
 h3 {
@@ -29,11 +30,10 @@ h3 {
 
 h4 {
     font-size: 1.15rem;
+    font-weight: bold;
 }
 
-h2, h4 {
-    font-weight: lighter; 
-}
+
 
 /* a {
     color: black;
@@ -278,7 +278,15 @@ aside section{
     padding-left: 10px;
 }
 
+/*--------------------OTHER-COURSES-----------------*/
+.other-courses{
 
+}
+
+.other-courses-section {
+    border-top: 1px solid black;
+
+}
 /* -------------------FOOTER------------------- */
 footer{
     background:#333;
