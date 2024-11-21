@@ -73,6 +73,9 @@ nav li a {
     color: black;
     background-color: #ffc0ffCB;
 }
+.subject-link{
+    color:white;
+}
 
 
 /* --------------------------------------Video styling :)-------------------------------------- */
@@ -104,139 +107,148 @@ nav li a {
 
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
+/* Styles the entire collapsible container */
 .collapsible-contents {
     width: 700px;
-    /* box-sizing: border-box; */
 }
-
-.droptext, .droptext-spesialisering, .hyperlink-text{
-    color:white;
-    line-height: 20px;
+/* General styles for text inside collapsible headers or links */
+.droptext, .droptext-spesialisering, .hyperlink-text {
+    color: white; 
+    line-height: 20px; 
 }
-
-.droptext-spesialisering{
+/* Additional padding for specialized dropdown text */
+.droptext-spesialisering {
     padding-left: 45px;
     padding-right: 30px;
 }
-
+/* Style for the collapsible item container */
 .collapsible-contents-list {
-    list-style: none;
-    width: 100%;
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 8px;
-    background: #333;
+    list-style: none; 
+    width: 100%; 
+    margin: 20px 0; 
+    padding: 10px; 
+    border-radius: 8px; 
+    background: #333; 
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3), 
-                -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.3); 
+    box-sizing: border-box; 
 }
-
+/* Styles for the label/header of the collapsible item */
 .collapsible-contents-list label {
-    display: flex;
-    align-items: flex-start;
+    display: flex; 
+    align-items: flex-start; 
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     font-weight: 500;
-    cursor: pointer;
-    color: #dddddd;
+    cursor: pointer; 
+    color: #dddddd; 
 }
-
+/* "+" icon before the label text */
 label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
+    content: '+'; 
+    margin-right: 10px; 
+    font-size: 1.5rem; 
+    font-weight: 600; 
 }
-
+/* Hide the checkbox (used for toggling content) */
 input[type="checkbox"] {
     display: none;
 }
-
+/* Initially hide the collapsible content */
 .collapsible-contents .contents {
-    padding: 0 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 10px; 
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease, padding 0.5s ease; 
     box-sizing: border-box;
 }
-
+/* Expand the content when the checkbox is checked */
 .collapsible-contents input[type="checkbox"]:checked + label + .contents {
-    max-height: none;
-    padding: 10px 10px 20px;
+    max-height: none; 
+    padding: 10px 10px 20px; 
 }
-
+/* Replace "+" with "-" when expanded */
 .collapsible-contents input[type="checkbox"]:checked + label::before {
     content: '-';
 }
-
-/* Emner */
-.subject-info1, .subject-info2 {
-    color: white;
-    display: inline-block;
-    margin-bottom: 10px;
+/* Style for the study year headers */
+.study-year {
+    color: white; 
+    
 }
-
+/* Styles for optional subjects and notes */
+.subject-info1, .subject-info2 {
+    color: white; 
+    display: inline-block; 
+    margin-bottom: 10px; 
+}
+/* Adds indentation for the second type of subject note */
 .subject-info2 {
     margin-left: 30px;
 }
-.semester-dropdown, .spesialisering-dropdown {
-    margin-left:20px;
+/* Styles for links */
+.subject-link{
+    color:white;
 }
-
+/* Adds indentation for semester dropdowns */
+.semester-dropdown, .spesialisering-dropdown {
+    margin-left: 10px;
+}
+/* Styles for collapsible sections like study structure */
 .study-structure, .box-structure {
-    margin: 20px 0;
-    border: 1px solid #ffc0ffCB;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    margin: 20px 0; 
+    border: 1px solid #ffc0ffCB; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
     box-sizing: border-box;
 }
-
+/* Styles for individual collapsible details inside the section */
 .study-structure details, .box-structure details {
-    margin: 10px 0;
-    border: none;
-    background: transparent;
+    margin: 10px 0; 
+    border: none; 
+    background: transparent; 
 }
-
+/* Styles for summary headers (dropdown triggers) */
 .study-structure summary, .box-structure summary {
-    background: #333;
-    color: white;
-    font-weight: normal;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background: #333; 
+    color: white; 
+    font-weight: normal; 
+    padding: 10px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
-
+/* Change text color when hovered over */
 .study-structure summary:hover, .box-structure summary:hover {
-    color: #ffc0ffCB;
+    color: #ffc0ffCB; 
 }
-
+/* Change background color when the dropdown is expanded */
 .study-structure details[open] summary, .box-structure details[open] summary {
-    background: #444;
+    background: #444; 
 }
-
+/* Styles for subject lists */
 .study-structure .subject-list {
-    list-style: none;
-    margin: 10px 0 0 20px;
-    padding: 0;
+    list-style: none; 
+    margin: 10px 0 0 20px; 
+    padding: 0; 
 }
-
+/* Styles for individual subject items */
 .study-structure .subject-list li {
-    margin: 5px 0;
-    padding: 8px;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+    margin: 5px 0; 
+    padding: 8px; 
+    background: #333; 
+    color: white; 
+    border-radius: 5px; 
+    transition: background-color 0.2s; 
+    margin-left: 20px; 
 }
-
+/* Change background and text color when hovered over */
 .study-structure .subject-list li:hover {
-    background: #ffc0ffCB;
-    color: white;
-    cursor: pointer;
+    background: #6e536ecb; 
+    color: white; 
+    cursor: pointer; 
 }
-
 
 /* -------------------------------------ASIDE-------------------------------------- */
 aside {
@@ -298,6 +310,14 @@ footer{
     cursor:pointer;
     text-decoration:underline;
     color: #ffc0ff;
+  }
+  .footer-link{
+    color:white;
+    text-decoration:none;
+  }
+  .footer-link :hover{
+    text-decoration: underline;
+    text-decoration-color: #ffc0ff;
   }
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
