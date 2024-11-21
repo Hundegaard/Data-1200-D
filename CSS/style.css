@@ -1,3 +1,8 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,10 +14,6 @@ main {
     align-items: center;
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 h1 {
     font-size: 3.0rem;
     font-weight: bold;
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 1.30rem;
+    font-weight: lighter;
 }
 
 h3 {
@@ -28,11 +30,10 @@ h3 {
 
 h4 {
     font-size: 1.15rem;
+    font-weight: bold;
 }
 
-h2, h4 {
-    font-weight: lighter; 
-}
+
 
 /* a {
     color: black;
@@ -105,11 +106,23 @@ nav li a {
     }
 }
 
+/* --------------------------------------Main grid containters-------------------------------------- */
+/* .main-content {
+    padding-left: 400px;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 900px;
+    grid-template-columns: 2fr 1fr;
+} */
+
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 /* Styles the entire collapsible container */
 .collapsible-contents {
     width: 700px;
+    width: 80%;
+    /* padding-left: 150px; */
+    /* box-sizing: border-box; */
 }
 /* General styles for text inside collapsible headers or links */
 .droptext, .droptext-spesialisering, .hyperlink-text {
@@ -251,14 +264,21 @@ input[type="checkbox"] {
 }
 
 /* -------------------------------------ASIDE-------------------------------------- */
+/* .bruh {
+    padding-left: 10px;
+} */
+
 aside {
-    width: 20%;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding: 15px;
     float: right;
     font-style: italic;
     background-color: lightgray;
   }
+
+.aside-top-section {
+    border-top: 1px solid black;
+}
 
 aside section{
     border-bottom: 1px solid black;
@@ -272,7 +292,15 @@ aside section{
     padding-left: 10px;
 }
 
+/*--------------------OTHER-COURSES-----------------*/
+.other-courses{
 
+}
+
+.other-courses-section {
+    border-top: 1px solid black;
+
+}
 /* -------------------FOOTER------------------- */
 footer{
     background:#333;
