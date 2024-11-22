@@ -38,13 +38,6 @@ h5 {
 }
 
 
-
-/* a {
-    color: black;
-    border-bottom: 1px solid yellow;
-} */
-
-
 /* --------------------------------------Nav-------------------------------------- :) */
 nav {
     overflow: hidden;
@@ -77,11 +70,10 @@ nav li a {
 .logo {
     color: black;
     background-color: #ffc0ffCB;
-    
 }
 
 .logo img{
-    width: 74px;
+    width: 75px;
     height: 46px;
 }
 
@@ -179,7 +171,7 @@ input[type="checkbox"] {
     padding: 0 10px; 
     max-height: 0; 
     overflow: hidden; 
-    transition: max-height 0.5s ease, padding 0.5s ease; 
+    transition: max-height 0.5s ease, padding 0.5s ease;
     box-sizing: border-box;
 }
 /* Expand the content when the checkbox is checked */
@@ -295,7 +287,7 @@ aside p {
 }
 
 
-/*--------------------OTHER-COURSES-----------------*/
+/*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
 .other-courses,.faglig-leder{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -353,20 +345,27 @@ footer{
     text-decoration: underline;
     text-decoration-color:#ffc0ff;
 }
-
+.col p{
+    font-weight: bold;
+}
+.col p:hover{
+    cursor:pointer;
+}
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
-    padding:13px;
-    width: 15px;
-    text-align:center;
+    padding: 13px;
+    font-size: 0;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
     border-radius:20px;
     margin-right:10px; 
   }
 
 /* Facebook logo */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
-  background: #ffc0ff;
+  background: #ffc0ff;;
   color: white;
 }
 
@@ -418,3 +417,44 @@ h3.readText{
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
+/* Grid layout */
+.github-content {
+    display: grid;
+    grid-template-columns: repeat(14, 100px);
+    grid-template-rows: repeat(18, 100px);
+}
+
+/* Text box grid and formatting */
+.github-text {
+    grid-row: 1 / 4;
+    grid-column: 4 / 12;
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+/* Image layout in the grid */
+.img1, .img4 {
+    grid-row-start: 13;
+}
+
+.img2, .img3 {
+    grid-row-start: 5;
+}
+
+.img1 {
+    grid-column-start: 5;
+}
+
+.img2 {
+    grid-column-start: 1;
+}
+
+.img3 {
+    grid-column-start: 11;
+}
+
+.img4 {
+    grid-column-start: 1;
+}
+
