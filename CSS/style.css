@@ -74,9 +74,6 @@ nav li a {
     color: black;
     background-color: #ffc0ffCB;
 }
-.subject-link{
-    color:white;
-}
 
 
 /* --------------------------------------Video styling :)-------------------------------------- */
@@ -200,12 +197,15 @@ input[type="checkbox"] {
     margin-left: 30px;
 }
 /* Styles for links */
-.subject-link{
+.link-style{
     color:white;
+    text-decoration: none;
 }
+.link-style:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffc0ff;
 /* Adds indentation for semester dropdowns */
-.semester-dropdown, .spesialisering-dropdown {
-    margin-left: 10px;
+
 }
 /* Styles for collapsible sections like study structure */
 .study-structure, .box-structure {
@@ -339,14 +339,7 @@ footer{
     text-decoration:underline;
     color: #ffc0ff;
   }
-  .footer-link{
-    color:white;
-    text-decoration:none;
-  }
-  .footer-link :hover{
-    text-decoration: underline;
-    text-decoration-color: #ffc0ff;
-  }
+  
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
