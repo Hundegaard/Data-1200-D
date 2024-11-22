@@ -291,12 +291,21 @@ aside p {
 
 /*--------------------OTHER-COURSES-----------------*/
 .other-courses{
-
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.other-courses-section {
+.course-list{
     border-top: 1px solid black;
 
+}
+.course-list::after{
+    content: '›';
+    float: right;
+    font-size: 24px;
+    color: #000000;
 }
 /* -------------------FOOTER------------------- */
 footer{
