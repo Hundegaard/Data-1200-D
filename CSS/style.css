@@ -77,6 +77,8 @@ nav li a {
 .logo {
     color: black;
     background-color: #ffc0ffCB;
+    max-width: 88px;
+    max-height: 46px;
 }
 
 
