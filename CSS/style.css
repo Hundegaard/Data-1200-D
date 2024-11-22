@@ -303,7 +303,6 @@ aside p {
     align-items: center;               /* Sentrerer elementene vertikalt */
     text-decoration: none;             /* Fjern understrek på lenken */
     color: black;                      /* Farge på teksten */
-    padding: 15px;                     /* Litt luft rundt elementene */
     border-bottom: 1px solid #ccc;  
 }
 
