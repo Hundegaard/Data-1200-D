@@ -427,25 +427,25 @@ h3.readText{
 .github-content {
     display: grid;
     grid-template-columns: repeat(14, 100px);
-    grid-template-rows: repeat(18, 100px);
+    grid-template-rows: repeat(20, 100px);
 }
 
 /* Text box grid and formatting */
 .github-text {
-    grid-row: 1 / 4;
+    grid-row: 1 / 6;
     grid-column: 4 / 12;
-    padding: 10px;
+    padding: 20px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 }
 
 /* Image layout in the grid */
 .img1, .img4 {
-    grid-row-start: 13;
+    grid-row-start: 15;
 }
 
 .img2, .img3 {
-    grid-row-start: 5;
+    grid-row-start: 7;
 }
 
 .img1 {
