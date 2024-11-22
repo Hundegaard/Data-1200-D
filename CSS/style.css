@@ -34,7 +34,7 @@ h4 {
 }
 
 h5 {
-    font-size: ;
+    font-size: 1.0rem;
 }
 
 
@@ -77,6 +77,8 @@ nav li a {
 .logo {
     color: black;
     background-color: #ffc0ffCB;
+    max-width: 88px;
+    max-height: 46px;
 }
 
 
@@ -291,15 +293,13 @@ aside p {
 
 /*--------------------OTHER-COURSES-----------------*/
 .other-courses{
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 40vw;
 }
 
 .course-list{
-    border-top: 1px solid black;
-
+    border-bottom: 10px solid #000000;
 }
 .course-list::after{
     content: '›';
