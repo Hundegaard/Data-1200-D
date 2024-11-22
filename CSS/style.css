@@ -200,8 +200,8 @@ input[type="checkbox"] {
 .subject-info2 {
     margin-left: 30px;
 }
-/* Styles for links */
-.link-style{
+/* Styles for subject-list links */
+.subject-list a{
     color:white;
     text-decoration: none;
 }
@@ -340,10 +340,17 @@ footer{
 
   .footer-info:hover, .social-info:hover{
     cursor:pointer;
-    text-decoration:underline;
-    color: #ffc0ff;
   }
-  
+  /* Styles for footer links */
+.col a{
+    color:white;
+    text-decoration: none;
+}
+
+.col a:hover{
+    text-decoration: underline;
+    text-decoration-color:#ffc0ff;
+}
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
