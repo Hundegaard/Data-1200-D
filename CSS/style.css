@@ -77,11 +77,10 @@ nav li a {
 .logo {
     color: black;
     background-color: #ffc0ffCB;
-    
 }
 
 .logo img{
-    width: 74px;
+    width: 75;
     height: 46px;
 }
 
@@ -296,13 +295,13 @@ aside p {
 
 
 /*--------------------OTHER-COURSES-----------------*/
-.other-courses,.faglig-leder{
+.other-courses{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 40vw;
 }
 
-.course-list,.faglig-leder{
+.course-list{
     display: flex;                     /* Gjør hele linken til en flex-container */
     justify-content: space-between;    /* Tekst til venstre, pil til høyre */
     align-items: center;               /* Sentrerer elementene vertikalt */
@@ -353,20 +352,27 @@ footer{
     text-decoration: underline;
     text-decoration-color:#ffc0ff;
 }
-
+.col p{
+    font-weight: bold;
+}
+.col p:hover{
+    cursor:pointer;
+}
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
   .fa {
-    padding:13px;
-    width: 15px;
-    text-align:center;
+    padding: 13px;
+    font-size: 0;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
     border-radius:20px;
     margin-right:10px; 
   }
 
 /* Facebook logo */
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
-  background: #ffc0ff;
+  background: #ffc0ff;;
   color: white;
 }
 
