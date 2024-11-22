@@ -340,22 +340,20 @@ footer{
     size:1em;
   }
 
-  .footer-info{
-    font-weight: bold;
-  }
-
-  .footer-info:hover, .social-info:hover{
-    cursor:pointer;
-  }
-  /* Styles for footer links */
-.col a{
+ /* Styles for footer links */
+ .col a{
     color:white;
     text-decoration: none;
 }
-
 .col a:hover{
     text-decoration: underline;
     text-decoration-color:#ffc0ff;
+}
+.col p{
+    font-weight: bold;
+}
+.col p:hover{
+    cursor:pointer;
 }
 
 /*Social media buttons, https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
