@@ -294,7 +294,7 @@ aside p {
 }
 
 
-/*--------------------OTHER-COURSES-----------------*/
+/*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
 .other-courses,.faglig-leder{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
