@@ -34,7 +34,7 @@ h4 {
 }
 
 h5 {
-    font-size: ;
+    font-size: 1.0rem;
 }
 
 
@@ -294,7 +294,6 @@ aside p {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 40vw;
-    /* max-width: 500px; */
 }
 
 .course-list{
