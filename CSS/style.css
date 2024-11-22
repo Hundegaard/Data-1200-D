@@ -80,6 +80,11 @@ nav li a {
     
 }
 
+.logo img{
+    width: 74px;
+    height: 46px;
+}
+
 
 /* --------------------------------------Video styling :)-------------------------------------- */
 .video {
@@ -418,3 +423,5 @@ h3.readText{
 .readText, .readTextHead {
     text-align: center;
 }
+
+/* --------------------------------------GITHUB PAGE-------------------------------------- */
