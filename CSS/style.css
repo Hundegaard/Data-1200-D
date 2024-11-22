@@ -297,14 +297,15 @@ aside p {
 }
 
 .course-list{
-    border-bottom: 10px solid #000000;
+    display: flex;                     /* Gjør hele linken til en flex-container */
+    justify-content: space-between;    /* Tekst til venstre, pil til høyre */
+    align-items: center;               /* Sentrerer elementene vertikalt */
+    text-decoration: none;             /* Fjern understrek på lenken */
+    color: black;                      /* Farge på teksten */
+    padding: 15px;                     /* Litt luft rundt elementene */
+    border-bottom: 1px solid #ccc;  
 }
-.course-list::after{
-    content: '›';
-    float: right;
-    font-size: 24px;
-    color: #000000;
-}
+
 /* -------------------FOOTER------------------- */
 footer{
     background:#333;
