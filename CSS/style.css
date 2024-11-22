@@ -295,13 +295,13 @@ aside p {
 
 
 /*--------------------OTHER-COURSES-----------------*/
-.other-courses{
+.other-courses,.faglig-leder{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 40vw;
 }
 
-.course-list{
+.course-list,.faglig-leder{
     display: flex;                     /* Gjør hele linken til en flex-container */
     justify-content: space-between;    /* Tekst til venstre, pil til høyre */
     align-items: center;               /* Sentrerer elementene vertikalt */
