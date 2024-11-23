@@ -123,8 +123,6 @@ nav li a {
 .collapsible-contents {
     width: 700px;
     width: 80%;
-    /* padding-left: 150px; */
-    /* box-sizing: border-box; */
 }
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p, .box-structure ul, .droptext-spesialisering {
@@ -221,9 +219,8 @@ input[type="checkbox"] {
 .link-style:hover{
     text-decoration: underline;
     text-decoration-color: #ffc0ff;
-/* Adds indentation for semester dropdowns */
-
 }
+
 /* Styles for collapsible sections like study structure */
 .study-structure, .box-structure {
     margin: 20px 0;
@@ -278,6 +275,7 @@ input[type="checkbox"] {
     background: #6e536ecb;
     color: white;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 /* -------------------------------------ASIDE-------------------------------------- */
@@ -322,10 +320,10 @@ aside p {
 footer{
     margin-top:auto;
     width:100%;
-    height:600px;
+    height:auto;
     background:#333;
     width:100%;
-    position:relative;
+    position:static;
     color:#fff;
     padding-top:100px;
     border-top-left-radius:50px;
