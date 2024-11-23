@@ -108,33 +108,44 @@ nav li a {
     }    
 }
 
-@media (min-width: 375px) {
+/* All pixel sizes are taken from inspect mode, under the "toggle device toolbar" mode.
+   Where we went with "Mobile M - 375px", "Laptop - 1024px" and "4k - 2560px"*/
+/* Mobile scaling */
+@media (max-width: 375px) {
+    /* h1 {
+        min-width: 10px;
+    } */
+
+    article {
+        max-width: 375px;
+    }
+}
+
+/* Laptop scaling */
+@media (max-width: 1024px) {
 
 }
 
-@media (min-width: 1024px) {
-
-}
-
-@media (min-width: 2560px) {
+/* Ultra wide scaling */
+@media (max-width: 2560px) {
 
 }
 
 /* --------------------------------------Main grid containters-------------------------------------- */
-/* .main-content {
-    padding-left: 400px;
-    width: 60%;
-    display: grid;
-    grid-template-rows: 900px;
-    grid-template-columns: 2fr 1fr;
-} */
+article {
+    width: 100%;
+    margin-left: none;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 /* Styles the entire collapsible container */
 .collapsible-contents {
-    width: 700px;
-    width: 80%;
+    /* width: 700px;
+    width: 80%; */
 }
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p, .box-structure ul, .droptext-spesialisering {
