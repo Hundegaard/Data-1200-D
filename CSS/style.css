@@ -348,10 +348,10 @@ footer{
     size:1em;
   }
 
-  /*LETTER SPACING
+  /*LETTER SPACING*/
   .col h3,p,a{
     letter-spacing: 0.1em;
-  } */
+  } 
 
  /* Styles for footer links */
  .col a{
