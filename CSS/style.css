@@ -105,7 +105,19 @@ nav li a {
 @media screen and (max-width: 650px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-    }
+    }    
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 2560px) {
+
 }
 
 /* --------------------------------------Main grid containters-------------------------------------- */
@@ -139,11 +151,12 @@ nav li a {
 .oslomet-links {
     color: inherit;
     font-weight: 800;
+    text-decoration: underline;
 }
 
 /* Styling for other OsloMet links, hover */
 .oslomet-links:hover {
-    color: #ffc0ff;
+    color: #a955a9cb;
 }
 
 /* Style for the collapsible item container */
@@ -331,14 +344,14 @@ footer{
     line-height:25px;
   }
 
-  .row{
+.row{
     width:85%;
     margin:auto;
     display:flex;
     flex-wrap:wrap;
     align-items:flex-start;
     justify-content:space-between;
-  }
+}
 
   .col{
     flex-basis:25%;
@@ -347,9 +360,9 @@ footer{
   }
 
   /*LETTER SPACING*/
-  .col h3,p,a{
+.col h3, p, a{
     letter-spacing: 0.1em;
-  } 
+} 
 
  /* Styles for footer links */
  .col a{
@@ -437,12 +450,12 @@ h3.readText{
 .github-content {
     display: grid;
     grid-template-columns: repeat(14, 100px);
-    grid-template-rows: repeat(20, 100px);
+    grid-template-rows: repeat(22, 100px);
 }
 
 /* Text box grid and formatting */
 .github-text {
-    grid-row: 1 / 6;
+    grid-row: 1 / 7;
     grid-column: 4 / 12;
     padding: 20px;
     border-top: 1px solid lightgrey;
@@ -451,11 +464,11 @@ h3.readText{
 
 /* Image layout in the grid */
 .img1, .img4 {
-    grid-row-start: 15;
+    grid-row-start: 16;
 }
 
 .img2, .img3 {
-    grid-row-start: 7;
+    grid-row-start: 8;
 }
 
 .img1 {
@@ -474,3 +487,4 @@ h3.readText{
     grid-column-start: 1;
 }
 
+/* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
