@@ -387,7 +387,7 @@ aside p {
     padding-left: 10px;
 }
 
-/* Mobile Devices (max-width 768px) */
+/* Mobile Devices scaling */
 @media (max-width: 375px) {
     aside {
         width: 70vw;
@@ -519,7 +519,8 @@ h3.readText {
     text-align: center;
 }
 
-.column, .column-accessability {
+.column,
+.column-accessability {
     float: left;
     padding: 5px;
 }
@@ -553,7 +554,8 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-.column-github img{
+/* Styles the images on the github page */
+.column-github img {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -562,6 +564,7 @@ h3.readText {
     padding-top: 5px;
 }
 
+/* Mobile device image scaling */
 @media (max-width: 1440px) {
     .column-github img {
         width: 90vw;
@@ -569,6 +572,7 @@ h3.readText {
     }
 }
 
+/* Ultra wide device image scaling */
 @media (min-width: 2560px) {
     .column-github img {
         width: 35vw;
@@ -585,20 +589,27 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-.column-accessability img{
+/* Styles the images on the accessability page */
+.column-accessability img {
     padding: 20px;
     height: auto;
     width: 40%;
 }
 
+/* Mobile device text scaling */
 @media (min-width: 375px) {
-    .accessability-text, .github-text{
+
+    .accessability-text,
+    .github-text {
         width: 90%;
     }
 }
 
+/* Laptop device text scaling */
 @media (min-width: 1024px) {
-    .accessability-text, .github-text {
+
+    .accessability-text,
+    .github-text {
         width: 50%;
     }
 }
