@@ -387,6 +387,7 @@ aside p {
     padding-left: 10px;
 }
 
+/* Mobile Devices (max-width 768px) */
 @media (max-width: 375px) {
     aside {
         width: 70vw;
@@ -413,7 +414,6 @@ aside p {
     /* Remove underline from the link */
     color: black;
     /* Color of the text */
-
     border-bottom: 1px solid #ccc;
 }
 
@@ -543,6 +543,7 @@ h3.readText {
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
+
 /* Text box grid and formatting */
 .github-text {
     height: auto;
