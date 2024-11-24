@@ -48,11 +48,13 @@ h5 {
 }
 
 
-/* --------------------------------------Nav-------------------------------------- :) */
+/* --------------------------------------Nav-------------------------------------- */
+/* Styles for the navigation bar*/
 nav {
     overflow: hidden;
     background-color: #333;
 }
+
 
 nav ul {
     margin: 0;
@@ -73,7 +75,6 @@ nav li a {
 
 }
 
-/* changes the colour to insicate which page the user is on */
 .active,
 a:hover {
     color: #ffc0ff;
@@ -111,6 +112,7 @@ a:hover {
         padding: 22px;
         /* Increase padding for larger screens */
         font-size: 1.5rem;
+
     }
 
     .logo img {
@@ -119,22 +121,21 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
-
-
-/* --------------------------------------Video styling :)-------------------------------------- */
-    .video {
-        width: 100vw;
-        height: 30vw;
-    }
 }
 
+/* --------------------------------------Video styling -------------------------------------- */
 .video {
     width: 100vw;
     height: 50vw;
 
 }
 
-
+@media screen and (min-width: 2560px) {
+    .video {
+        width: 100vw;
+        height: 30vw;
+    }
+}
 
 /* --------------------------------------Grid containers-------------------------------------- */
 .grid-container {
@@ -158,17 +159,15 @@ a:hover {
     .grid-container h3 {
         font-size: 1.0rem;
     }
-
-    .main-content-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 
-/* --------------------------------------DROPDOWN LISTS-------------------------------------- */
+
+/* --------------------------------------Dropdown lists------------------------------------- */
+
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p,
-.box-structure,
+.box-structure ,
 .droptext-spesialisering {
     color: white;
     line-height: 20px;
@@ -183,12 +182,12 @@ a:hover {
 /* Styling for other OsloMet links */
 .oslomet-links {
     color: inherit;
-    font-weight: 800;
+    font-weight: 500;
     text-decoration: underline;
 }
 
 /* Styling for other OsloMet links, hover */
-.oslomet-links:hover{
+.oslomet-links:hover p{
     color: #a955a9cb;
 }
 
@@ -198,11 +197,11 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .main-content-container {
         grid-template-columns: repeat(1, 1fr);
     }
-} */
+}
 
 /* Style for the collapsible item container */
 .collapsible-contents-list {
@@ -379,6 +378,7 @@ aside {
     background-color: lightgray;
 }
 
+/* Adds a thin black border at the top of sections */
 .aside-top-section {
     border-top: 1px solid black;
 }
@@ -426,6 +426,7 @@ aside p {
 }
 
 /* -------------------FOOTER------------------- */
+/* Styles for the footer section */
 footer {
     margin-top: 100px;
     width: 100%;
@@ -440,6 +441,7 @@ footer {
     line-height: 25px;
 }
 
+/* Styles for row container inside the footer */
 .row {
     width: 85%;
     margin: auto;
@@ -449,29 +451,32 @@ footer {
     justify-content: space-between;
 }
 
+/* Styles for individual column inside the row */
 .col {
     flex-basis: 25%;
     padding: 10px;
     size: 1em;
 }
 
-/*Letter spacing in needed areas*/
+/* Adds consistent letter spacing to specific elements in the footer */
 .col h3,
 p,
 a {
     letter-spacing: 0.1em;
 }
 
-/* Styles for footer links */
+/* Styles for links inside the columns */
 .col a {
     color: white;
     text-decoration: none;
 }
 
+/* Hover effect for links in the columns */
 .col a:hover {
     text-decoration: underline;
     text-decoration-color: #ffc0ff;
 }
+
 
 /*Social media buttons*/
 .social-media-container {
@@ -480,6 +485,7 @@ a {
     gap: 15px;
 }
 
+/* Styles for individual social media links */
 .social-media-link {
     display: flex;
     align-items: center;
@@ -489,6 +495,7 @@ a {
     transition: color 0.3s ease;
 }
 
+/* Styles for icons inside social media links */
 .social-media-link img {
     width: 30px;
     height: 30px;
@@ -496,12 +503,15 @@ a {
     color: pink;
 }
 
+/* Hover effect for social media links */
 .social-media-link:hover {
     color: #ffc0ff;
 }
 
 
+
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
+/* Styles for the top page image container */
 .topPageImage {
     display: flex;
     width: 75%;
@@ -510,16 +520,18 @@ a {
     margin-right: auto;
 }
 
-.readText h3{
+/* Styles for <h3> elements on the activity page*/
+h3.readText {
     margin-top: 50px;
 }
 
-/*image grid on activity page*/
+/* Styles for the image grid container on the activity page */
 .grid-container-activity {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
+
 
 .column,
 .column-accessability {
@@ -533,6 +545,7 @@ a {
     height: 30%;
 }
 
+/* Clearfix for the grid container to ensure proper layout */
 .grid-container-activity:after {
     content: "";
     display: table;
@@ -545,10 +558,10 @@ a {
     padding: 10px;
 }
 
-
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
+
 /* Text box grid and formatting */
-.github-text, .accessability-text, .readText{
+.github-text {
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
