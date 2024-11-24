@@ -545,17 +545,10 @@ h3.readText {
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
-/* Grid layout */
-.github-content {
-    display: grid;
-    grid-template-columns: repeat(14, 100px);
-    grid-template-rows: repeat(22, 100px);
-}
 
 /* Text box grid and formatting */
 .github-text {
-    grid-row: 1 / 7;
-    grid-column: 4 / 12;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
     border-top: 1px solid lightgrey;
@@ -591,7 +584,6 @@ h3.readText {
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
 .accessability-text {
-    /* width: 60%; */
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -599,19 +591,14 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-.column-accessability img{
-    width:100%;
-    height:auto;
-}
-
-@media (min-width: 375px){
-    .accessability-text {
-         width: 90%; 
+@media (min-width: 375px) {
+    .accessability-text, .github-text {
+        width: 90%;
     }
 }
 
 @media (min-width: 1024px) {
-    .accessability-text {
+    .accessability-text, .github-text {
         width: 50%;
     }
 }
