@@ -557,6 +557,9 @@ h3.readText {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    width: 100vw;
+    height: auto;
+    padding: 5px;
 }
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
