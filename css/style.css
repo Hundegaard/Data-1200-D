@@ -111,7 +111,6 @@ a:hover {
         padding: 22px;
         /* Increase padding for larger screens */
         font-size: 1.5rem;
-
     }
 
     .logo img {
@@ -120,21 +119,22 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
-}
+
 
 /* --------------------------------------Video styling :)-------------------------------------- */
+    .video {
+        width: 100vw;
+        height: 30vw;
+    }
+}
+
 .video {
     width: 100vw;
     height: 50vw;
 
 }
 
-@media screen and (min-width: 2560px) {
-    .video {
-        width: 100vw;
-        height: 30vw;
-    }
-}
+
 
 /* --------------------------------------Grid containers-------------------------------------- */
 .grid-container {
@@ -157,6 +157,10 @@ a:hover {
 
     .grid-container h3 {
         font-size: 1.0rem;
+    }
+
+    .main-content-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -194,11 +198,11 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .main-content-container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 /* Style for the collapsible item container */
 .collapsible-contents-list {
@@ -506,7 +510,7 @@ a {
     margin-right: auto;
 }
 
-h3.readText {
+.readText h3{
     margin-top: 50px;
 }
 
@@ -544,7 +548,7 @@ h3.readText {
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
 /* Text box grid and formatting */
-.github-text {
+.github-text, .accessability-text, .readText{
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
