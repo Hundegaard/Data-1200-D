@@ -170,6 +170,12 @@ nav li a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 650px) {
+    .main-content-container {
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}
+
 .collapsible-contents-list {
     list-style: none;
     width: 50vw;
