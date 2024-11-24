@@ -160,12 +160,10 @@ a:hover {
 }
 
 
-
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
-
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p,
-.box-structure ,
+.box-structure,
 .droptext-spesialisering {
     color: white;
     line-height: 20px;
@@ -180,12 +178,12 @@ a:hover {
 /* Styling for other OsloMet links */
 .oslomet-links {
     color: inherit;
-    font-weight: 500;
+    font-weight: 800;
     text-decoration: underline;
 }
 
 /* Styling for other OsloMet links, hover */
-.oslomet-links:hover p{
+.oslomet-links:hover{
     color: #a955a9cb;
 }
 
@@ -470,7 +468,6 @@ a {
     text-decoration-color: #ffc0ff;
 }
 
-
 /*Social media buttons*/
 .social-media-container {
     display: flex;
@@ -497,7 +494,6 @@ a {
 .social-media-link:hover {
     color: #ffc0ff;
 }
-
 
 
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
@@ -544,8 +540,8 @@ h3.readText {
     padding: 10px;
 }
 
-/* --------------------------------------GITHUB PAGE-------------------------------------- */
 
+/* --------------------------------------GITHUB PAGE-------------------------------------- */
 /* Text box grid and formatting */
 .github-text {
     height: auto;
