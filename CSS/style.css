@@ -374,6 +374,9 @@ aside p {
     color: black;                      /* Farge på teksten */
     border-bottom: 1px solid #ccc;
 }
+.faglig-leder img{
+    width: 10vw;
+}
 
 /* -------------------FOOTER------------------- */
 footer{
