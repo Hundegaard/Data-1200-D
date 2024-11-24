@@ -475,7 +475,8 @@ h3.readText{
 .github-text {
     grid-row: 1 / 7;
     grid-column: 4 / 12;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 }
