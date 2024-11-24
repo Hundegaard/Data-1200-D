@@ -367,11 +367,14 @@ aside p {
 }
 
 .course-list,.faglig-leder{
-    display: flex;                     /* Gjør hele linken til en flex-container */
-    justify-content: space-between;    /* Tekst til venstre, pil til høyre */
-    align-items: center;               /* Sentrerer elementene vertikalt */
-    text-decoration: none;             /* Fjern understrek på lenken */
-    color: black;                      /* Farge på teksten */
+    display: flex;                     /
+    /* makes the link to a flex container */
+    justify-content: space-between;  
+    /* makes the text on the laft arrow on right */
+    align-items: center;      
+    text-decoration: none;     
+    /* removes the margin under from link */
+    color: black;                      
     border-bottom: 1px solid #ccc;
 }
 .faglig-leder img{
