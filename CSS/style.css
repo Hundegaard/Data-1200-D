@@ -118,7 +118,7 @@ nav li a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
+    gap: 2rem;
     width: 80vw;
     border-bottom: 1px solid lightgrey;
 }
@@ -379,7 +379,7 @@ aside p {
 
 /* -------------------FOOTER------------------- */
 footer{
-    margin-top:auto;
+    margin-top:100px;
     width:100%;
     height:auto;
     background:#333;
@@ -404,12 +404,12 @@ footer{
   .col{
     flex-basis:25%;
     padding:10px;
-    size:1em;
+    size:1rem;
   }
 
   /*LETTER SPACING*/
 .col h3, p, a{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
 } 
 
  /* Styles for footer links */
