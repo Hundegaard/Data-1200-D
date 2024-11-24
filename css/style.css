@@ -492,6 +492,7 @@ h3.readText{
 
 .readText, .readTextHead {
     text-align: center;
+    padding: 10px;
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
