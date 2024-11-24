@@ -353,7 +353,6 @@ aside p {
     padding-left: 10px;
 }
 
-/* Mobile Devices (max-width 768px) */
 @media (max-width: 375px) {
     aside {
         width: 70vw;
@@ -501,48 +500,12 @@ h3.readText{
 /* Grid layout */
 .github-content {
     display: grid;
-    grid-template-columns: repeat(14, 100px);
-    grid-template-rows: repeat(22, 100px);
+    grid-template-columns: repeat(1, 1fr);
+    
 }
-
-/* Text box grid and formatting */
-.github-text {
-    grid-row: 1 / 7;
-    grid-column: 4 / 12;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+@media (max-width: 375px) {
+    github-content {
+        width: 10vw;
+    }
 }
-
-.github-content img {
-    /* width: 100%;
-    height: auto; */
-}
-
-/* Image layout in the grid */
-.img1, .img4 {
-    grid-row-start: 16;
-}
-
-.img2, .img3 {
-    grid-row-start: 8;
-}
-
-.img1 {
-    grid-column-start: 5;
-}
-
-.img2 {
-    grid-column-start: 1;
-}
-
-.img3 {
-    grid-column-start: 11;
-}
-
-.img4 {
-    grid-column-start: 1;
-}
-
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
