@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     /* box-sizing: border-box; */
 }
@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-height:100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -21,8 +21,9 @@ h1 {
     font-size: 3.0rem;
     font-weight: bold;
 }
-@media (max-width: 375px){
-    h1{
+
+@media (max-width: 375px) {
+    h1 {
         font-size: 2.0rem;
     }
 }
@@ -30,7 +31,7 @@ h1 {
 h2 {
     font-size: 1.30rem;
     font-weight: lighter;
-    padding:2.5%;
+    padding: 2.5%;
 }
 
 h3 {
@@ -72,7 +73,8 @@ nav li a {
 
 }
 
-.active, a:hover {
+.active,
+a:hover {
     color: #ffc0ff;
 }
 
@@ -81,7 +83,7 @@ nav li a {
     background-color: #ffc0ffCB;
 }
 
-.logo img{
+.logo img {
     width: 75px;
     height: auto;
 }
@@ -89,27 +91,33 @@ nav li a {
 /* Mobile device scaling for nav */
 @media (max-width: 375px) {
     nav li a {
-        padding: 12px;  /* Reduce padding for mobile */
+        padding: 12px;
+        /* Reduce padding for mobile */
         font-size: 0.8rem;
     }
 
     .logo img {
-        width: 50px;  /* Reduce logo size for mobile */
-        height: auto;  /* Maintain aspect ratio */
+        width: 50px;
+        /* Reduce logo size for mobile */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 }
 
 /*  ultra wide scaling for nav */
 @media (min-width: 2560px) {
     nav li a {
-        padding:22px;  /* Increase padding for larger screens */
+        padding: 22px;
+        /* Increase padding for larger screens */
         font-size: 1.5rem;
 
     }
 
     .logo img {
-        width: 100px;  /* Increase logo size for large screens */
-        height: auto;  /* Maintain aspect ratio */
+        width: 100px;
+        /* Increase logo size for large screens */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 }
 
@@ -117,13 +125,14 @@ nav li a {
 .video {
     width: 100vw;
     height: 50vw;
-    
+
 }
+
 @media screen and (min-width: 2560px) {
     .video {
         width: 100vw;
         height: 30vw;
-    }    
+    }
 }
 
 /* --------------------------------------Grid containers-------------------------------------- */
@@ -143,25 +152,25 @@ nav li a {
 @media screen and (max-width: 650px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-    }   
-    .grid-container h3{
+    }
+
+    .grid-container h3 {
         font-size: 1.0rem;
-    } 
+    }
 }
 
 
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
-/* Styles the entire collapsible container */
-.collapsible-contents {
-
-}
 
 /* General styles for text inside collapsible headers or links */
-.collapsible-contents p, .box-structure ul, .droptext-spesialisering {
+.collapsible-contents p,
+.box-structure ul,
+.droptext-spesialisering {
     color: white;
     line-height: 20px;
 }
+
 /* Additional padding for specialized dropdown text */
 .droptext-spesialisering {
     padding-left: 45px;
@@ -185,11 +194,13 @@ nav li a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 @media screen and (max-width: 650px) {
     .main-content-container {
         grid-template-columns: repeat(1, 1fr);
-    } 
+    }
 }
+
 /* Style for the collapsible item container */
 .collapsible-contents-list {
     list-style: none;
@@ -199,7 +210,7 @@ nav li a {
     border-radius: 8px;
     background: #333;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
-                -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
+        -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 
@@ -220,6 +231,7 @@ nav li a {
     cursor: pointer;
     color: #dddddd;
 }
+
 /* "+" icon before the label text */
 label::before {
     content: '+';
@@ -227,10 +239,12 @@ label::before {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 /* Hide the checkbox (used for toggling content) */
 input[type="checkbox"] {
     display: none;
 }
+
 /* Initially hide the collapsible content */
 .collapsible-contents .contents {
     padding: 0 10px;
@@ -239,42 +253,51 @@ input[type="checkbox"] {
     transition: max-height 0.5s ease, padding 0.5s ease;
     box-sizing: border-box;
 }
+
 /* Expand the content when the checkbox is checked */
-.collapsible-contents input[type="checkbox"]:checked + label + .contents {
+.collapsible-contents input[type="checkbox"]:checked+label+.contents {
     max-height: none;
     padding: 10px 10px 20px;
 }
+
 /* Replace "+" with "-" when expanded */
-.collapsible-contents input[type="checkbox"]:checked + label::before {
+.collapsible-contents input[type="checkbox"]:checked+label::before {
     content: '-';
 }
+
 /* Style for the study year headers */
 .study-year {
     color: white;
-    margin-left:10px;
+    margin-left: 10px;
 }
+
 /* Styles for optional subjects and notes */
-.subject-info1, .subject-info2 {
+.subject-info1,
+.subject-info2 {
     color: white;
     display: inline-block;
     margin-bottom: 10px;
 }
+
 /* Adds indentation for the second type of subject note */
 .subject-info2 {
     margin-left: 30px;
 }
+
 /* Styles for subject-list links */
-.subject-list a{
-    color:white;
+.subject-list a {
+    color: white;
     text-decoration: none;
 }
-.link-style:hover{
+
+.link-style:hover {
     text-decoration: underline;
     text-decoration-color: #ffc0ff;
 }
 
 /* Styles for collapsible sections like study structure */
-.study-structure, .box-structure {
+.study-structure,
+.box-structure {
     margin: 20px 0;
     border: 1px solid #ffc0ffCB;
     border-radius: 8px;
@@ -282,14 +305,18 @@ input[type="checkbox"] {
     padding: 10px;
     box-sizing: border-box;
 }
+
 /* Styles for individual collapsible details inside the section */
-.study-structure details, .box-structure details {
+.study-structure details,
+.box-structure details {
     margin: 10px 0;
     border: none;
     background: transparent;
 }
+
 /* Styles for summary headers (dropdown triggers) */
-.study-structure summary, .box-structure summary {
+.study-structure summary,
+.box-structure summary {
     background: #333;
     color: white;
     font-weight: normal;
@@ -298,20 +325,26 @@ input[type="checkbox"] {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 /* Change text color when hovered over */
-.study-structure summary:hover, .box-structure summary:hover {
+.study-structure summary:hover,
+.box-structure summary:hover {
     color: #ffc0ffCB;
 }
+
 /* Change background color when the dropdown is expanded */
-.study-structure details[open] summary, .box-structure details[open] summary {
+.study-structure details[open] summary,
+.box-structure details[open] summary {
     background: #444;
 }
+
 /* Styles for subject lists */
 .study-structure .subject-list {
     list-style: none;
     margin: 10px 0 0 20px;
     padding: 0;
 }
+
 /* Styles for individual subject items */
 .study-structure .subject-list li {
     margin: 5px 0;
@@ -322,6 +355,7 @@ input[type="checkbox"] {
     transition: background-color 0.2s;
     margin-left: 20px;
 }
+
 /* Change background and text color when hovered over */
 .study-structure .subject-list li:hover {
     background: #6e536ecb;
@@ -339,13 +373,13 @@ aside {
     float: right;
     font-style: italic;
     background-color: lightgray;
-  }
+}
 
 .aside-top-section {
     border-top: 1px solid black;
 }
 
-aside section{
+aside section {
     border-bottom: 1px solid black;
 }
 
@@ -358,71 +392,81 @@ aside p {
         width: 70vw;
     }
 }
+
 /*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
-.other-courses,.faglig-leder{
+.other-courses,
+.faglig-leder {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 40vw;
 }
 
-.course-list,.faglig-leder{
-    display: flex;                     /
-    /* makes the link to a flex container */
-    justify-content: space-between;  
-    /* makes the text on the laft arrow on right */
-    align-items: center;      
-    text-decoration: none;     
-    /* removes the margin under from link */
-    color: black;                      
+.course-list,
+.faglig-leder {
+    /* Make the entire link a flex container */
+    display: flex;
+    /* Text to the left, arrow to the right */
+    justify-content: space-between;
+    /* Centers the elements vertically */
+    align-items: center;
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: black;
+    /* Color of the text */
+
     border-bottom: 1px solid #ccc;
 }
-.faglig-leder img{
+
+.faglig-leder img {
     width: 10vw;
 }
 
 /* -------------------FOOTER------------------- */
-footer{
-    margin-top:100px;
-    width:100%;
-    height:auto;
-    background:#333;
-    width:100%;
-    position:static;
-    color:#fff;
-    padding-top:100px;
-    border-top-left-radius:50px;
-    border-top-right-radius:50px;
-    line-height:25px;
-  }
-
-.row{
-    width:85%;
-    margin:auto;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:flex-start;
-    justify-content:space-between;
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background: #333;
+    width: 100%;
+    position: static;
+    color: #fff;
+    padding-top: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    line-height: 25px;
 }
 
-  .col{
-    flex-basis:25%;
-    padding:10px;
-    size:1em;
-  }
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
-  /*LETTER SPACING*/
-.col h3, p, a{
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    size: 1em;
+}
+
+/*Letter spacing in needed areas*/
+.col h3,
+p,
+a {
     letter-spacing: 0.1em;
-} 
+}
 
- /* Styles for footer links */
- .col a{
-    color:white;
+/* Styles for footer links */
+.col a {
+    color: white;
     text-decoration: none;
 }
-.col a:hover{
+
+.col a:hover {
     text-decoration: underline;
-    text-decoration-color:#ffc0ff;
+    text-decoration-color: #ffc0ff;
 }
 
 
@@ -464,7 +508,7 @@ footer{
     margin-right: auto;
 }
 
-h3.readText{
+h3.readText {
     margin-top: 50px;
 }
 
@@ -473,39 +517,73 @@ h3.readText{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-  }
+}
 
-.column {
+.column, .column-accessability {
     float: left;
     padding: 5px;
-  }
+}
 
-  .column img {
+.column img {
     margin-top: px;
     width: 30%;
     height: 30%;
-  }
-
-  .grid-container-activity:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
-.readText, .readTextHead {
+.grid-container-activity:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.readText,
+.readTextHead {
     text-align: center;
+    padding: 10px;
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
-/* Grid layout */
-.github-content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    
+/* Text box grid and formatting */
+.github-text {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
-@media (max-width: 375px) {
-    github-content {
-        width: 10vw;
+
+.column-github img{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    padding: 5px;
+}
+
+/* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
+.accessability-text {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.column-accessability img{
+    padding: 20px;
+    height: auto;
+    width: 40%;
+}
+
+@media (min-width: 375px) {
+    .accessability-text, .github-text{
+        width: 90%;
     }
 }
-/* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
+
+@media (min-width: 1024px) {
+    .accessability-text, .github-text {
+        width: 50%;
+    }
+}
