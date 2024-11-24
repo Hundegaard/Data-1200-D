@@ -166,6 +166,10 @@ nav li a {
 }
 
 /* Style for the collapsible item container */
+.main-content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .collapsible-contents-list {
     list-style: none;
     width: 50vw;
@@ -300,7 +304,7 @@ input[type="checkbox"] {
 
 /* -------------------------------------ASIDE-------------------------------------- */
 aside {
-    width: 50%;
+    width: 40vw;
     padding: 15px;
     float: right;
     font-style: italic;
