@@ -562,9 +562,9 @@ h3.readText {
     padding-top: 5px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .column-github img {
-        width: 70vw;
+        width: 90vw;
         height: auto;
     }
 }
