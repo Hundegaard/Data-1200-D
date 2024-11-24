@@ -59,7 +59,7 @@ nav li {
 
 nav li a {
     display: block;
-    padding: 14px 14px;
+    padding: 14px;
     text-align: center;
     text-decoration: none;
     color: #dddddd;
@@ -77,9 +77,35 @@ nav li a {
 
 .logo img{
     width: 75px;
-    height: 46px;
+    height: auto;
 }
 
+/* Mobile Devices (max-width 768px) */
+@media (max-width: 768px) {
+    nav li a {
+        padding: 12px;  /* Reduce padding for mobile */
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        width: 50px;  /* Reduce logo size for mobile */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
+/* Ultra-wide Screens (min-width 2560px) */
+@media (min-width: 2560px) {
+    nav li a {
+        padding:22px;  /* Increase padding for larger screens */
+        font-size: 1.5rem;
+
+    }
+
+    .logo img {
+        width: 100px;  /* Increase logo size for large screens */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
 
 /* --------------------------------------Video styling :)-------------------------------------- */
 .video {
