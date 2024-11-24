@@ -324,6 +324,8 @@ input[type="checkbox"] {
 aside {
     width: 40vw;
     padding: 15px;
+    margin-top: 2.3%;
+    margin-right: 3%;
     float: right;
     font-style: italic;
     background-color: lightgray;
@@ -490,6 +492,11 @@ h3.readText{
     padding-right: 20px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
+}
+
+.github-content img {
+    /* width: 100%;
+    height: auto; */
 }
 
 /* Image layout in the grid */
