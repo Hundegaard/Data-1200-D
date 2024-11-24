@@ -134,48 +134,6 @@ nav li a {
     }    
 }
 
-/* All pixel sizes are taken from inspect mode, under the "toggle device toolbar" mode.
-   Where we went with "Mobile M - 375px", "Laptop - 1024px" and "4k - 2560px"*/
-/* Mobile scaling */
-@media (max-width: 375px) {
-    /* h1 {
-        min-width: 10px;
-    } */
-
-    article {
-        max-width: 375px;
-    }
-}
-
-/* Laptop scaling */
-@media (max-width: 1024px) {
-    .grid-container{
-        width: 90%;
-        }
-    h1{
-        font-size: 2rem;
-        }
-    h2{
-        font-size: 1rem;
-        }
-    p{
-        font-size: 1rem;
-        }
-}
-
-/* Ultra wide scaling */
-@media (max-width: 2560px) {
-
-}
-
-/* --------------------------------------Main grid containters-------------------------------------- */
-/* article {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-} */
 
 
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
@@ -218,6 +176,7 @@ nav li a {
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
                 -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    center
 }
 /* Styles for the label/header of the collapsible item */
 .collapsible-contents-list label {
