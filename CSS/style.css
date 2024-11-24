@@ -86,8 +86,8 @@ nav li a {
     height: auto;
 }
 
-/* Mobile Devices (max-width 768px) */
-@media (max-width: 768px) {
+/* Mobile device scaling for nav */
+@media (max-width: 375px) {
     nav li a {
         padding: 12px;  /* Reduce padding for mobile */
         font-size: 0.8rem;
@@ -99,7 +99,7 @@ nav li a {
     }
 }
 
-/* Ultra-wide Screens (min-width 2560px) */
+/*  ultra wide scaling for nav */
 @media (min-width: 2560px) {
     nav li a {
         padding:22px;  /* Increase padding for larger screens */
@@ -198,6 +198,13 @@ nav li a {
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
                 -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+}
+
+/* Mobile device scaling for dropdown meny */
+@media (max-width: 375px) {
+    .collapsible-contents-list {
+        width: 70vw;
+    }
 }
 
 /* Styles for the label/header of the collapsible item */
