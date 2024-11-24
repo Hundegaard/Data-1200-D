@@ -555,31 +555,10 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-/* Image layout in the grid */
-.img1,
-.img4 {
-    grid-row-start: 16;
-}
-
-.img2,
-.img3 {
-    grid-row-start: 8;
-}
-
-.img1 {
-    grid-column-start: 5;
-}
-
-.img2 {
-    grid-column-start: 1 / 3;
-}
-
-.img3 {
-    grid-column-start: 11;
-}
-
-.img4 {
-    grid-column-start: 1;
+.column-github img{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
