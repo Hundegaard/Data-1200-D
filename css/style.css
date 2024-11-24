@@ -406,16 +406,16 @@ aside p {
 
 .course-list,
 .faglig-leder {
+    /* Make the entire link a flex container */
     display: flex;
-    /* Gjør hele linken til en flex-container */
+    /* Text to the left, arrow to the right */
     justify-content: space-between;
-    /* Tekst til venstre, pil til høyre */
+    /* Centers the elements vertically */
     align-items: center;
-    /* Sentrerer elementene vertikalt */
     text-decoration: none;
-    /* Fjern understrek på lenken */
+    /* Remove underline from the link */
     color: black;
-    /* Farge på teksten */
+    /* Color of the text */
     border-bottom: 1px solid #ccc;
 }
 
@@ -453,7 +453,7 @@ footer {
     size: 1em;
 }
 
-/*LETTER SPACING*/
+/*Letter spacing in needed areas*/
 .col h3,
 p,
 a {
@@ -591,8 +591,14 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
+.column-accessability img{
+    padding: 20px;
+    height: auto;
+    width: 40%;
+}
+
 @media (min-width: 375px) {
-    .accessability-text, .github-text {
+    .accessability-text, .github-text{
         width: 90%;
     }
 }
