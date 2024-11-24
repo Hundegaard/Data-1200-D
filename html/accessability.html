@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessability</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
@@ -24,60 +25,122 @@
         <h1>Accessability</h1>
 
         <section class="accessability-text">
-            <h2><b>Challenges using GitHub</b></h2>
+            <h2><b>Accessibility Review of Our Website Design</b></h2>
             <p>
-                GitHub has been an amazing tool to be able to work and collaborate together as a group and not
-                always having to meet physically or having to transfer our codes to each other using a memory stick
-                or some other way.
+                Accessibility is essential to ensure all users, regardless of ability, can interact with and benefit
+                from a website. In designing our site, we focused on universal design principles to create an inclusive,
+                user-friendly experience. Below is a summary of the accessibility features we implemented, along with
+                insights from our automated and manual testing processes.
             </p>
-            <p>
-                As practical and useful as GitHub has been, we've run into a handful of problems we could've avoided
-                had we been more experienced with GitHub and how the branching system works. First, we had some
-                issues setting up the GitHub collab and making sure that everyone had all the files and folders we
-                had set up. Next came all the merger conflicts due to not pulling and pushing our updates often
-                enough, more than one person working on the same thing, or it just emerged because we were all
-                working in the same file.
-            </p>
-            <p>
-                All of this leading to various problems such as:
-            </p>
+
+            <h3>Key Accessibility Features</h3>
+
             <ul>
                 <li>
+                    <h4>Readable Fonts</h4>
                     <p>
-                        Complete paragraphs of code went missing, so we had to go back in time to a past commit to
-                        try
-                        and scour and salvage whatever went missing and then having to implement it in the new
-                        commit
-                        again.
+                        We selected a clear, legible font to make content accessible for users with visual impairments
+                        or cognitive disabilities. This ensures readability across devices and screen resolutions.
                     </p>
                 </li>
                 <li>
+                    <h4>Relative Contrast in Colors</h4>
                     <p>
-                        Duplication of code elements, which probably happened because two people were working inside
-                        the
-                        same section of an element. Leading to complete chaos when both of those were merged.
+                        The colors on our site provide strong contrast between text and background. For example, the
+                        light pink color avoids blending into white backgrounds, and it darkens when hovered over,
+                        improving visibility for interactive elements.
                     </p>
                 </li>
                 <li>
+                    <h4>Text Scaling</h4>
                     <p>
-                        Someone being behind 5 updates and not getting any pull requests, we have still no idea how
-                        this
-                        happened or how we resolved this. We just tried a lot of different things praying and hoping
-                        it
-                        would be fixed, and it somehow did.
+                        The site supports text scaling on different screen sizes without breaking the layout, ensuring
+                        readability for users who rely on zooming or magnification tools.
                     </p>
                 </li>
                 <li>
+                    <h4>Spacious Layout</h4>
                     <p>
-                        Pushing an old version so everyone who pulled it went back, this being related to the issue
-                        above. Someone being unaware they're behind and then pushing their old version to the rest
-                        of the group, so we had to revert a lot of times due to this.
+                        Generous spacing between text blocks and interactive elements enhances usability for users with
+                        motor impairments and cognitive challenges.
+                    </p>
+                </li>
+                <li>
+                    <h4>Minimal Use of Divs</h4>
+                    <p>
+                        We reduced unnecessary div elements in the HTML, making it easier for assistive technologies
+                        like screen readers to interpret the content.
                     </p>
                 </li>
             </ul>
 
+            <h3>Automated Testing</h3>
+            <p>
+                Using Google's Lighthouse tool, we assessed our site's accessibility, receiving a score of 73% along
+                with
+                100% scores for performance and best practices. The report highlighted several issues, and we addressed
+                the following:
+            </p>
+
+            <ul>
+                <li>
+                    <h4>Logo Display</h4>
+                    <p>
+                        We fixed an issue where the logo did not display correctly on some devices by
+                        ensuring it had the proper width and height properties.
+                    </p>
+                </li>
+                <li>
+                    <h4>Spacing Issues</h4>
+                    <p>
+                        We resolved spacing issues that were impacting the layout and navigation,
+                        improving the visual structure of the site.
+                    </p>
+                </li>
+                <li>
+                    <h4>Explicit Width and Height for Images</h4>
+                    <p>
+                        We ensured that all images, including the logo, have
+                        explicit width and height properties, preventing layout shifts and improving page stability.
+                    </p>
+                </li>
+            </ul>
+
+            <h3>Manual Code Review and Improvements</h3>
+            <p>
+                Beyond automated testing, we performed a manual review to ensure accessibility:
+            </p>
+
+            <ul>
+                <li>
+                    <h4>Hover Color Contrast</h4>
+                    <p>
+                        We manually confirmed that the hover state contrast was sufficient for visually impaired users.
+                    </p>
+                </li>
+                <li>
+                    <h4>Semantic HTML</h4>
+                    <p>
+                        We verified the proper use of semantic HTML elements like header, main, and footer to ensure
+                        assistive technologies can interpret the page effectively.
+                    </p>
+                </li>
+                <li>
+                    <h4>Screen Reader Testing</h4>
+                    <p>
+                        We tested navigation with screen readers to ensure layout shifts did not disrupt usability and
+                        all labels were read correctly.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                In conclusion, our site's accessibility score reflects thoughtful design decisions and improvements. Our
+                manual testing helped refine features like font readability, hover states, and semantic HTML to ensure a
+                more inclusive user experience.
+            </p>
         </section>
-        
+
     </main>
     <!-- Footer with contact information and external links -->
     <footer>
@@ -88,19 +151,25 @@
                 <p>Postboks 4, St. Olavs plass</p>
                 <p>0130 Oslo</p>
                 <p>Tlf.: 67 23 50 00</p>
-                <p><a  href="https://www.oslomet.no/om/kontakt" target="_blank"><b>Kontakt oss</b></a></p>
+                <p><a href="https://www.oslomet.no/om/kontakt" target="_blank"><b>Kontakt oss</b></a></p>
             </section>
             <section class="col">
-                <a href="https://www.oslomet.no/en" target="_blank"><p><b>English</b></a></p>
+                <a href="https://www.oslomet.no/en" target="_blank">
+                    <p><b>English</b>
+                </a></p>
                 <p><a href="https://www.oslomet.no/alumni" target="_blank"><b>Alumni</b></a></p>
                 <p><a href="https://www.oslomet.no/om/ansatteoversikt" target="_blank"><b>Ansatteoversikt</b></a></p>
-                <p><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" target="_blank"><b>Arrangementoversikt</b></a></p>
+                <p><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt"
+                        target="_blank"><b>Arrangementoversikt</b></a></p>
                 <p><a href="https://www.oslomet.no/om/for-ansatte" target="_blank"><b>For ansatte</b></a></p>
                 <p><a href="https://www.oslomet.no/om/for-studenter" target="_blank"><b>For studenter</b></a></p>
-                <p><a href="https://www.oslomet.no/om/ledige-stillinger" target="_blank"><b>Ledige stillinger</b></a></p>
-                <p><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar" target="_blank"><b>Personverneerklæring og informasjonskapslar</b></a></p>
+                <p><a href="https://www.oslomet.no/om/ledige-stillinger" target="_blank"><b>Ledige stillinger</b></a>
+                </p>
+                <p><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar"
+                        target="_blank"><b>Personverneerklæring og informasjonskapslar</b></a></p>
                 <p><a href="https://www.oslomet.no/om/pressekontakt" target="_blank"><b>Pressekontakt</b></a></p>
-                <p><a href="https://www.oslomet.no/om/tilgjengelegheitserklering" target="_blank"><b>Tilgjengelegheitserklæring</b></a></p>
+                <p><a href="https://www.oslomet.no/om/tilgjengelegheitserklering"
+                        target="_blank"><b>Tilgjengelegheitserklæring</b></a></p>
                 <p><a href="https://www-admin.oslomet.no/admin/view/content/58148" target="_blank"><b>Admin</b></a></p>
             </section>
             <section class="col">
@@ -129,4 +198,5 @@
             </section>
     </footer>
 </body>
+
 </html>
