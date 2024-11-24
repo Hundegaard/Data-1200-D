@@ -145,10 +145,9 @@ nav li a {
 /* --------------------------------------DROPDOWN LISTS-------------------------------------- */
 /* Styles the entire collapsible container */
 .collapsible-contents {
-    margin-top:
-    /* width: 700px;
-    width: 80%; */
+    
 }
+
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p, .box-structure ul, .droptext-spesialisering {
     color: white;
