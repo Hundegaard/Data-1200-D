@@ -165,7 +165,7 @@ a:hover {
 
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p,
-.box-structure ul,
+.box-structure ,
 .droptext-spesialisering {
     color: white;
     line-height: 20px;
@@ -180,12 +180,12 @@ a:hover {
 /* Styling for other OsloMet links */
 .oslomet-links {
     color: inherit;
-    font-weight: 800;
+    font-weight: 500;
     text-decoration: underline;
 }
 
 /* Styling for other OsloMet links, hover */
-.oslomet-links:hover {
+.oslomet-links:hover p{
     color: #a955a9cb;
 }
 
@@ -561,7 +561,7 @@ h3.readText {
     text-align: center;
     width: 55vw;
     height: auto;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 /* Mobile device image scaling */
@@ -591,7 +591,7 @@ h3.readText {
 
 /* Styles the images on the accessability page */
 .column-accessability img {
-    padding: 20px;
+    padding: 10px;
     height: auto;
     width: 40%;
 }

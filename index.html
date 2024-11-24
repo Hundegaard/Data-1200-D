@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="Data1200-eksamen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <title>Matematisk modellering og datavitenskap - ingeniør</title>
@@ -12,11 +12,9 @@
     <!-- Navigation bar elements -->
     <nav>
         <ul>
-            <!-- <a href="https://www.oslomet.no/" aria-label="OsloMet hjemmeside"> -->
             <li class="logo">
                 <img src="/media/index_media/oslomet_logo.png" alt="OsloMet Logo">
             </li>
-            </a>
             <li>
                 <a href="index.html" class="active" aria-label="Hjemme side">Home</a>
             </li>
@@ -92,13 +90,13 @@
 
             <article class="main-content-container">
                 <!--DROPDOWN LISTS-->
-                <!-- Dropdown list code inspiration taken from and tweaked: https://www.youtube.com/watch?v=fSkhTd4rpDo&t=2s -->
+                <!-- Dropdown list code, inspiration taken from and tweaked: https://www.youtube.com/watch?v=fSkhTd4rpDo&t=2s -->
                 <section class="dropdown-container">
                     <ul class="collapsible-contents">
 
                         <!-- Information about what you learn and the different specialisations you can choose from -->
-                        <li class="collapsible-contents-list" role="checkbox" aria-checked="false">
-                            <input type="checkbox" name="collapsible-contents" id="first">
+                        <li class="collapsible-contents-list">
+                            <input type="checkbox" name="collapsible-contents" id="first" role="checkbox" aria-checked="false">
                             <label for="first">Hva du lærer</label>
                             <div class="contents">
                                 <section class="box-structure">
@@ -183,10 +181,10 @@
                         </li>
 
                         <!-- List of all the subjects in this degree -->
-                        <li class="collapsible-contents-list" role="checkbox" aria-checked="false">
+                        <li class="collapsible-contents-list">
 
                             <!-- Checkbox to toggle visibility of the collapsible content -->
-                            <input type="checkbox" name="collapsible-contents" id="second">
+                            <input type="checkbox" name="collapsible-contents" id="second" role="checkbox" aria-checked="false">
 
                             <!-- Label for the checkbox, acts as a clickable header -->
                             <label for="second">Studiets oppbygning</label>
@@ -510,8 +508,8 @@
                         </li>
 
                         <!-- Information about how tutoring will happen -->
-                        <li class="collapsible-contents-list" role="checkbox" aria-checked="false">
-                            <input type="checkbox" name="collapsible-contents" id="third">
+                        <li class="collapsible-contents-list">
+                            <input type="checkbox" name="collapsible-contents" id="third" role="checkbox" aria-checked="false">
                             <label for="third">Hvordan undervisning foregår</label>
                             <div class="contents">
                                 <section class="box-structure">
@@ -539,8 +537,8 @@
                         </li>
 
                         <!-- Information about jobs you can get -->
-                        <li class="collapsible-contents-list" role="checkbox" aria-checked="false">
-                            <input type="checkbox" name="collapsible-contents" id="fourth">
+                        <li class="collapsible-contents-list">
+                            <input type="checkbox" name="collapsible-contents" id="fourth" role="checkbox" aria-checked="false">
                             <label for="fourth">Jobbmuligheter</label>
                             <div class="contents">
                                 <section class="box-structure">
@@ -571,19 +569,18 @@
                         </li>
 
                         <!-- Information about further education opportunitites -->
-                        <li class="collapsible-contents-list" role="checkbox" aria-checked="false">
-                            <input type="checkbox" name="collapsible-contents" id="fifth">
+                        <li class="collapsible-contents-list">
+                            <input type="checkbox" name="collapsible-contents" id="fifth" role="checkbox" aria-checked="false">
                             <label for="fifth">Videre studiemuligheter ved OsloMet</label>
                             <div class="contents">
                                 <section class="box-structure">
-                                    <p>
-                                        <a class="oslomet-links"
-                                            href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi"
-                                            target="_blank"
-                                            aria-label="Les mer om Anvendt data- og informasjonsteknologi">
-                                            Anvendt data- og informasjonsteknologi (ACIT)
-                                        </a>
-                                    </p>
+                                    <a class="oslomet-links" 
+                                    href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi" 
+                                    target="_blank"
+                                    aria-labelledby="Les mer om Anvendt data- og informasjonsteknologi">
+                                        <p>Anvendt data- og informasjonsteknologi (ACIT)<p>
+                                        <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
+                                     </a>
                                 </section>
                             </div>
                         </li>
@@ -815,7 +812,7 @@
                     aria-label="Les mer om Tre-terminsordning til ingeniørutdanning">
                     <section>
                         <h5>Tre-terminsordning til ingeniørutdanning</h5>
-                        <p> Bachelorprogram | 3 år | Pilestredet i Oslo | Heltid</p>
+                        <p>Bachelorprogram | 3 år | Pilestredet i Oslo | Heltid</p>
                     </section>
                     <span>&#x276F;</span>
                 </a>
