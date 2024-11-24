@@ -343,7 +343,12 @@ aside p {
     padding-left: 10px;
 }
 
-
+/* Mobile Devices (max-width 768px) */
+@media (max-width: 375px) {
+    aside {
+        width: 70vw;
+    }
+}
 /*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
 .other-courses,.faglig-leder{
     display: grid;
