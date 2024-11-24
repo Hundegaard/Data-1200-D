@@ -521,7 +521,7 @@ h3.readText {
     text-align: center;
 }
 
-.column {
+.column, .column-accessability {
     float: left;
     padding: 5px;
 }
@@ -597,6 +597,11 @@ h3.readText {
     padding-right: 20px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
+}
+
+.column-accessability img{
+    width:100%;
+    height:auto;
 }
 
 @media (min-width: 375px){
