@@ -73,6 +73,7 @@ nav li a {
 
 }
 
+/* changes the colour to insicate which page the user is on */
 .active,
 a:hover {
     color: #ffc0ff;
