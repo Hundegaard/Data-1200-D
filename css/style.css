@@ -548,8 +548,7 @@ h3.readText {
 
 /* Text box grid and formatting */
 .github-text {
-    grid-row: 1 / 7;
-    grid-column: 4 / 12;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
     border-top: 1px solid lightgrey;
@@ -585,7 +584,6 @@ h3.readText {
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
 .accessability-text {
-    /* width: 60%; */
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -594,13 +592,13 @@ h3.readText {
 }
 
 @media (min-width: 375px) {
-    .accessability-text {
+    .accessability-text, .github-text {
         width: 90%;
     }
 }
 
 @media (min-width: 1024px) {
-    .accessability-text {
+    .accessability-text, .github-text {
         width: 50%;
     }
 }
