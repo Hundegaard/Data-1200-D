@@ -561,7 +561,7 @@ h3.readText {
     text-align: center;
     width: 55vw;
     height: auto;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 /* Mobile device image scaling */
