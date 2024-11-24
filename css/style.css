@@ -559,7 +559,7 @@ h3.readText {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    width: 100vw;
+    width: 55vw;
     height: auto;
     padding-top: 5px;
 }
@@ -575,7 +575,7 @@ h3.readText {
 /* Ultra wide device image scaling */
 @media (min-width: 2560px) {
     .column-github img {
-        width: 35vw;
+        width: 55vw;
         height: auto;
     }
 }
