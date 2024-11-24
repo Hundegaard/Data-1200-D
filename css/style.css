@@ -559,7 +559,21 @@ h3.readText {
     text-align: center;
     width: 100vw;
     height: auto;
-    padding: 5px;
+    padding-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .column-github img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 2560px) {
+    .column-github img {
+        width: 35vw;
+        height: auto;
+    }
 }
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
