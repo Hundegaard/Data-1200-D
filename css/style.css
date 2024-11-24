@@ -387,6 +387,7 @@ aside p {
     padding-left: 10px;
 }
 
+/* Mobile Devices scaling */
 @media (max-width: 375px) {
     aside {
         width: 70vw;
@@ -413,7 +414,6 @@ aside p {
     /* Remove underline from the link */
     color: black;
     /* Color of the text */
-
     border-bottom: 1px solid #ccc;
 }
 
@@ -519,7 +519,8 @@ h3.readText {
     text-align: center;
 }
 
-.column, .column-accessability {
+.column,
+.column-accessability {
     float: left;
     padding: 5px;
 }
@@ -543,6 +544,7 @@ h3.readText {
 }
 
 /* --------------------------------------GITHUB PAGE-------------------------------------- */
+
 /* Text box grid and formatting */
 .github-text {
     height: auto;
@@ -552,13 +554,30 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-.column-github img{
+/* Styles the images on the github page */
+.column-github img {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     width: 100vw;
     height: auto;
-    padding: 5px;
+    padding-top: 5px;
+}
+
+/* Mobile device image scaling */
+@media (max-width: 1440px) {
+    .column-github img {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+/* Ultra wide device image scaling */
+@media (min-width: 2560px) {
+    .column-github img {
+        width: 35vw;
+        height: auto;
+    }
 }
 
 /* --------------------------------------ACCESSABILITY PAGE-------------------------------------- */
@@ -570,20 +589,27 @@ h3.readText {
     border-bottom: 1px solid lightgrey;
 }
 
-.column-accessability img{
+/* Styles the images on the accessability page */
+.column-accessability img {
     padding: 20px;
     height: auto;
     width: 40%;
 }
 
+/* Mobile device text scaling */
 @media (min-width: 375px) {
-    .accessability-text, .github-text{
+
+    .accessability-text,
+    .github-text {
         width: 90%;
     }
 }
 
+/* Laptop device text scaling */
 @media (min-width: 1024px) {
-    .accessability-text, .github-text {
+
+    .accessability-text,
+    .github-text {
         width: 50%;
     }
 }
