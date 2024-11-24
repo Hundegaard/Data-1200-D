@@ -180,8 +180,8 @@ nav li a {
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
                 -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    center
 }
+
 /* Styles for the label/header of the collapsible item */
 .collapsible-contents-list label {
     display: flex;
