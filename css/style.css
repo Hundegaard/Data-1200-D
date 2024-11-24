@@ -521,7 +521,7 @@ h3.readText {
     text-align: center;
 }
 
-.column {
+.column, .column-accessability {
     float: left;
     padding: 5px;
 }
