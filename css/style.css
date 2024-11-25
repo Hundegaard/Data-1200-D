@@ -22,12 +22,6 @@ h1 {
     font-weight: bold;
 }
 
-@media (max-width: 375px) {
-    h1 {
-        font-size: 2.0rem;
-    }
-}
-
 h2 {
     font-size: 1.30rem;
     font-weight: lighter;
@@ -48,12 +42,14 @@ h5 {
 }
 
 
-/* --------------------------------------Nav-------------------------------------- :) */
+/* --------------------------------------Nav-------------------------------------- */
+/* Styles for the navigation bar*/
 nav {
     overflow: hidden;
     background-color: #333;
 }
 
+/* Styles for the navigation content */
 nav ul {
     margin: 0;
     display: flex;
@@ -102,6 +98,20 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
+
+    h1 {
+        font-size: 2.0rem;
+    }
+
+    /* Mobile device scaling for dropdown meny */
+    .collapsible-contents-list {
+        width: 78vw;
+        margin-left: -50px;
+    }
+
+    aside {
+        width: 70vw;
+    }
 }
 
 /*  ultra wide scaling for nav */
@@ -119,20 +129,18 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
-}
 
-/* --------------------------------------Video styling :)-------------------------------------- */
-.video {
-    width: 100vw;
-    height: 50vw;
-
-}
-
-@media screen and (min-width: 2560px) {
+    /* --------------------------------------Video styling -------------------------------------- */
     .video {
         width: 100vw;
         height: 30vw;
     }
+}
+
+.video {
+    width: 100vw;
+    height: 50vw;
+
 }
 
 /* --------------------------------------Grid containers-------------------------------------- */
@@ -157,15 +165,19 @@ a:hover {
     .grid-container h3 {
         font-size: 1.0rem;
     }
+
+    .main-content-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
 
-/* --------------------------------------DROPDOWN LISTS-------------------------------------- */
+/* --------------------------------------Dropdown lists------------------------------------- */
 
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p,
-.box-structure ,
+.box-structure,
 .droptext-spesialisering {
     color: white;
     line-height: 20px;
@@ -185,7 +197,7 @@ a:hover {
 }
 
 /* Styling for other OsloMet links, hover */
-.oslomet-links:hover p{
+.oslomet-links:hover {
     color: #a955a9cb;
 }
 
@@ -195,30 +207,17 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 650px) {
-    .main-content-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 /* Style for the collapsible item container */
 .collapsible-contents-list {
     list-style: none;
     width: 50vw;
-    margin: 20px 0;
+    margin: 35px 0;
     padding: 10px;
     border-radius: 8px;
     background: #333;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
         -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-}
-
-/* Mobile device scaling for dropdown meny */
-@media (max-width: 375px) {
-    .collapsible-contents-list {
-        width: 70vw;
-    }
 }
 
 /* Styles for the label/header of the collapsible item */
@@ -375,6 +374,7 @@ aside {
     background-color: lightgray;
 }
 
+/* Adds a thin black border at the top of sections */
 .aside-top-section {
     border-top: 1px solid black;
 }
@@ -385,13 +385,6 @@ aside section {
 
 aside p {
     padding-left: 10px;
-}
-
-/* Mobile Devices scaling */
-@media (max-width: 375px) {
-    aside {
-        width: 70vw;
-    }
 }
 
 /*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
@@ -422,6 +415,7 @@ aside p {
 }
 
 /* -------------------FOOTER------------------- */
+/* Styles for the footer section */
 footer {
     margin-top: 100px;
     width: 100%;
@@ -436,6 +430,7 @@ footer {
     line-height: 25px;
 }
 
+/* Styles for row container inside the footer */
 .row {
     width: 85%;
     margin: auto;
@@ -445,25 +440,27 @@ footer {
     justify-content: space-between;
 }
 
+/* Styles for individual column inside the row */
 .col {
     flex-basis: 25%;
     padding: 10px;
     size: 1em;
 }
 
-/*Letter spacing in needed areas*/
+/* Adds consistent letter spacing to specific elements in the footer */
 .col h3,
 p,
 a {
     letter-spacing: 0.1em;
 }
 
-/* Styles for footer links */
+/* Styles for links inside the columns */
 .col a {
     color: white;
     text-decoration: none;
 }
 
+/* Hover effect for links in the columns */
 .col a:hover {
     text-decoration: underline;
     text-decoration-color: #ffc0ff;
@@ -477,6 +474,7 @@ a {
     gap: 15px;
 }
 
+/* Styles for individual social media links */
 .social-media-link {
     display: flex;
     align-items: center;
@@ -486,6 +484,7 @@ a {
     transition: color 0.3s ease;
 }
 
+/* Styles for icons inside social media links */
 .social-media-link img {
     width: 30px;
     height: 30px;
@@ -493,13 +492,14 @@ a {
     color: pink;
 }
 
+/* Hover effect for social media links */
 .social-media-link:hover {
     color: #ffc0ff;
 }
 
 
-
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
+/* Styles for the top page image container */
 .topPageImage {
     display: flex;
     width: 75%;
@@ -508,11 +508,12 @@ a {
     margin-right: auto;
 }
 
+/* Styles for <h3> elements on the activity page*/
 h3.readText {
     margin-top: 50px;
 }
 
-/*image grid on activity page*/
+/* Styles for the image grid container on the activity page */
 .grid-container-activity {
     display: flex;
     flex-wrap: wrap;
@@ -531,6 +532,7 @@ h3.readText {
     height: 30%;
 }
 
+/* Clearfix for the grid container to ensure proper layout */
 .grid-container-activity:after {
     content: "";
     display: table;
@@ -543,8 +545,8 @@ h3.readText {
     padding: 10px;
 }
 
-/* --------------------------------------GITHUB PAGE-------------------------------------- */
 
+/* --------------------------------------GITHUB PAGE-------------------------------------- */
 /* Text box grid and formatting */
 .github-text {
     height: auto;
@@ -598,7 +600,7 @@ h3.readText {
 
 /* Mobile device text scaling */
 @media (min-width: 375px) {
-
+    
     .accessability-text,
     .github-text {
         width: 90%;
@@ -611,5 +613,9 @@ h3.readText {
     .accessability-text,
     .github-text {
         width: 50%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
     }
 }
