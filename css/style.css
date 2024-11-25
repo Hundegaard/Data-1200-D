@@ -626,5 +626,8 @@ h3.readText {
     .accessability-text,
     .github-text {
         width: 50%;
+    }   
+    h1{
+        font-size:2.4rem;
     }
 }
