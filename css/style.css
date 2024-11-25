@@ -67,7 +67,6 @@ nav li a {
     text-align: center;
     text-decoration: none;
     color: #dddddd;
-
 }
 
 .active,
@@ -193,7 +192,7 @@ a:hover {
 /* Styling for other OsloMet links */
 .oslomet-links {
     color: inherit;
-    font-weight: 500;
+    font-weight: 800;
     text-decoration: underline;
 }
 
@@ -601,7 +600,7 @@ h3.readText {
 
 /* Mobile device text scaling */
 @media (min-width: 375px) {
-    
+
     .accessability-text,
     .github-text {
         width: 90%;
