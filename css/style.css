@@ -22,12 +22,6 @@ h1 {
     font-weight: bold;
 }
 
-@media (max-width: 375px) {
-    h1 {
-        font-size: 2.0rem;
-    }
-}
-
 h2 {
     font-size: 1.30rem;
     font-weight: lighter;
@@ -104,6 +98,20 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
+
+    h1 {
+        font-size: 2.0rem;
+    }
+
+    /* Mobile device scaling for dropdown meny */
+    .collapsible-contents-list {
+        width: 78vw;
+        margin-left: -50px;
+    }
+
+    aside {
+        width: 70vw;
+    }
 }
 
 /*  ultra wide scaling for nav */
@@ -121,20 +129,18 @@ a:hover {
         height: auto;
         /* Maintain aspect ratio */
     }
-}
 
-/* --------------------------------------Video styling -------------------------------------- */
-.video {
-    width: 100vw;
-    height: 50vw;
-
-}
-
-@media screen and (min-width: 2560px) {
+    /* --------------------------------------Video styling -------------------------------------- */
     .video {
         width: 100vw;
         height: 30vw;
     }
+}
+
+.video {
+    width: 100vw;
+    height: 50vw;
+
 }
 
 /* --------------------------------------Grid containers-------------------------------------- */
@@ -159,6 +165,10 @@ a:hover {
     .grid-container h3 {
         font-size: 1.0rem;
     }
+
+    .main-content-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -167,7 +177,7 @@ a:hover {
 
 /* General styles for text inside collapsible headers or links */
 .collapsible-contents p,
-.box-structure ,
+.box-structure,
 .droptext-spesialisering {
     color: white;
     line-height: 20px;
@@ -197,12 +207,6 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 650px) {
-    .main-content-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 /* Style for the collapsible item container */
 .collapsible-contents-list {
     list-style: none;
@@ -214,14 +218,6 @@ a:hover {
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
         -6px -6px 10px -1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-}
-
-/* Mobile device scaling for dropdown meny */
-@media (max-width: 375px) {
-    .collapsible-contents-list {
-        width: 78vw;
-        margin-left: -50px;
-    }
 }
 
 /* Styles for the label/header of the collapsible item */
@@ -391,13 +387,6 @@ aside p {
     padding-left: 10px;
 }
 
-/* Mobile Devices scaling */
-@media (max-width: 375px) {
-    aside {
-        width: 70vw;
-    }
-}
-
 /*--------------------OTHER-COURSES-AND-FAGLIGLEDER----------------*/
 .other-courses,
 .faglig-leder {
@@ -509,7 +498,6 @@ a {
 }
 
 
-
 /* --------------------------------------ACTIVITY PAGE-------------------------------------- */
 /* Styles for the top page image container */
 .topPageImage {
@@ -531,7 +519,6 @@ h3.readText {
     flex-wrap: wrap;
     text-align: center;
 }
-
 
 .column,
 .column-accessability {
@@ -558,8 +545,8 @@ h3.readText {
     padding: 10px;
 }
 
-/* --------------------------------------GITHUB PAGE-------------------------------------- */
 
+/* --------------------------------------GITHUB PAGE-------------------------------------- */
 /* Text box grid and formatting */
 .github-text {
     height: auto;
@@ -613,7 +600,7 @@ h3.readText {
 
 /* Mobile device text scaling */
 @media (min-width: 375px) {
-
+    
     .accessability-text,
     .github-text {
         width: 90%;
@@ -626,8 +613,9 @@ h3.readText {
     .accessability-text,
     .github-text {
         width: 50%;
-    }   
-    h1{
-        font-size:2.4rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
     }
 }
